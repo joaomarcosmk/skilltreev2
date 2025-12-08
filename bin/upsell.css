@@ -1,0 +1,385 @@
+/* ============================================
+   Upsell Page Styles
+   ============================================ */
+
+.upsell-page {
+    background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-secondary-light) 100%);
+    min-height: 100vh;
+}
+
+/* Upsell Header */
+.upsell-header {
+    padding: var(--spacing-4) 0;
+    text-align: center;
+}
+
+.upsell-header__logo {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.upsell-header__logo .highlight {
+    color: var(--color-primary);
+}
+
+/* Upsell Main */
+.upsell-main {
+    padding: var(--spacing-4) 0 var(--spacing-16);
+}
+
+/* Timer */
+.upsell-timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-4);
+    padding: var(--spacing-4) var(--spacing-8);
+    background: linear-gradient(90deg, #ef4444 0%, #dc2626 100%);
+    border-radius: var(--radius-xl);
+    margin-bottom: var(--spacing-8);
+    flex-wrap: wrap;
+}
+
+.upsell-timer__icon {
+    font-size: var(--font-size-2xl);
+    color: var(--color-white);
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+.upsell-timer__text {
+    color: var(--color-white);
+    font-size: var(--font-size-lg);
+}
+
+.upsell-timer__countdown {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+}
+
+.upsell-timer__unit {
+    background: var(--color-white);
+    padding: var(--spacing-2) var(--spacing-4);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    min-width: 60px;
+}
+
+.upsell-timer__unit span {
+    display: block;
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    color: #ef4444;
+}
+
+.upsell-timer__unit small {
+    font-size: var(--font-size-xs);
+    color: var(--color-gray-500);
+    text-transform: uppercase;
+}
+
+.upsell-timer__separator {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-white);
+}
+
+/* Upsell Content */
+.upsell-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.upsell-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    padding: var(--spacing-2) var(--spacing-6);
+    background: linear-gradient(90deg, #f59e0b 0%, #eab308 100%);
+    border-radius: var(--radius-full);
+    color: var(--color-white);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-6);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.upsell-title {
+    font-size: var(--font-size-4xl);
+    font-weight: var(--font-weight-extrabold);
+    color: var(--color-white);
+    margin-bottom: var(--spacing-6);
+    line-height: 1.2;
+}
+
+@media screen and (max-width: 576px) {
+    .upsell-title {
+        font-size: var(--font-size-2xl);
+    }
+}
+
+.upsell-title .highlight {
+    color: var(--color-primary);
+}
+
+.upsell-description {
+    font-size: var(--font-size-lg);
+    color: var(--color-gray-300);
+    margin-bottom: var(--spacing-10);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Upsell Product Card */
+.upsell-product {
+    background: var(--color-white);
+    border-radius: var(--radius-2xl);
+    padding: var(--spacing-8);
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-2xl);
+    margin-bottom: var(--spacing-10);
+}
+
+.upsell-product__discount {
+    position: absolute;
+    top: 20px;
+    right: -35px;
+    background: #ef4444;
+    color: var(--color-white);
+    padding: var(--spacing-2) var(--spacing-10);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-sm);
+    transform: rotate(45deg);
+}
+
+.upsell-product__header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-6);
+    margin-bottom: var(--spacing-8);
+    text-align: left;
+}
+
+@media screen and (max-width: 576px) {
+    .upsell-product__header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.upsell-product__icon {
+    width: 80px;
+    height: 80px;
+    background: var(--color-primary-100);
+    border-radius: var(--radius-xl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-3xl);
+    color: var(--color-primary);
+    flex-shrink: 0;
+}
+
+.upsell-product__info h2 {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-secondary);
+    margin-bottom: var(--spacing-2);
+}
+
+.upsell-product__info p {
+    font-size: var(--font-size-base);
+    color: var(--color-gray-500);
+}
+
+/* Benefits */
+.upsell-product__benefits {
+    background: var(--color-gray-50);
+    padding: var(--spacing-6);
+    border-radius: var(--radius-xl);
+    margin-bottom: var(--spacing-8);
+    text-align: left;
+}
+
+.upsell-product__benefits h3 {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-secondary);
+    margin-bottom: var(--spacing-4);
+}
+
+.upsell-product__benefits ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-3);
+}
+
+@media screen and (max-width: 576px) {
+    .upsell-product__benefits ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+.upsell-product__benefits li {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-600);
+}
+
+.upsell-product__benefits li i {
+    color: var(--color-primary);
+}
+
+/* Pricing */
+.upsell-product__pricing {
+    margin-bottom: var(--spacing-6);
+}
+
+.upsell-product__original-price {
+    font-size: var(--font-size-lg);
+    color: var(--color-gray-400);
+    margin-bottom: var(--spacing-2);
+}
+
+.upsell-product__original-price s {
+    color: #ef4444;
+}
+
+.upsell-product__current-price {
+    font-size: var(--font-size-2xl);
+    color: var(--color-secondary);
+    margin-bottom: var(--spacing-2);
+}
+
+.upsell-product__current-price strong {
+    font-size: var(--font-size-4xl);
+    font-weight: var(--font-weight-extrabold);
+    color: var(--color-primary);
+}
+
+.upsell-product__installments {
+    font-size: var(--font-size-base);
+    color: var(--color-gray-500);
+}
+
+.upsell-product__installments strong {
+    color: var(--color-secondary);
+}
+
+/* CTA */
+.upsell-product__cta {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.upsell-accept {
+    font-size: var(--font-size-lg);
+    padding: var(--spacing-5) var(--spacing-8);
+    animation: glow 2s infinite;
+}
+
+@keyframes glow {
+    0%, 100% { box-shadow: 0 0 20px rgba(34, 197, 94, 0.4); }
+    50% { box-shadow: 0 0 40px rgba(34, 197, 94, 0.6); }
+}
+
+.upsell-product__guarantee {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-2);
+    margin-top: var(--spacing-4);
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-500);
+}
+
+.upsell-product__guarantee i {
+    color: var(--color-primary);
+}
+
+/* Testimonials */
+.upsell-testimonials {
+    margin-bottom: var(--spacing-10);
+}
+
+.upsell-testimonials h3 {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-white);
+    margin-bottom: var(--spacing-6);
+}
+
+.upsell-testimonials__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-6);
+}
+
+@media screen and (max-width: 576px) {
+    .upsell-testimonials__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.upsell-testimonial {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: var(--spacing-6);
+    border-radius: var(--radius-xl);
+    text-align: left;
+}
+
+.upsell-testimonial__stars {
+    color: #f59e0b;
+    margin-bottom: var(--spacing-3);
+}
+
+.upsell-testimonial p {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-300);
+    font-style: italic;
+    margin-bottom: var(--spacing-4);
+}
+
+.upsell-testimonial strong {
+    display: block;
+    color: var(--color-white);
+    font-size: var(--font-size-sm);
+}
+
+.upsell-testimonial span {
+    font-size: var(--font-size-xs);
+    color: var(--color-primary);
+}
+
+/* Decline Link */
+.upsell-decline {
+    margin-top: var(--spacing-8);
+}
+
+.upsell-decline a {
+    color: var(--color-gray-400);
+    font-size: var(--font-size-sm);
+    text-decoration: underline;
+    transition: color var(--transition-fast);
+}
+
+.upsell-decline a:hover {
+    color: var(--color-gray-300);
+}

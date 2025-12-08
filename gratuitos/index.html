@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conteúdo Gratuito da Skilltree - Blog de Arte Digital, aulas gratuitas, brushes, kits e muito mais.">
+    <meta name="keywords" content="gratuitos, blog, arte digital, brushes, aulas grátis, skilltree">
+    <title>Conteúdo Gratuito | Skilltree</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/pages.css">
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="../" class="nav__logo">
+                <span class="logo-icon">🌳</span>
+                <span class="logo-text">Skill<span class="highlight">tree</span></span>
+            </a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="../" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="../#courses" class="nav__link">Cursos</a></li>
+                    <li class="nav__item"><a href="../gratuitos/" class="nav__link active">Gratuitos</a></li>
+                    <li class="nav__item"><a href="../professores/" class="nav__link">Professores</a></li>
+                    <li class="nav__item"><a href="../galeria/" class="nav__link">Galeria</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close"><i class="fas fa-times"></i></div>
+            </div>
+            
+            <div class="nav__actions">
+                <button class="cart-btn" id="cart-btn" aria-label="Carrinho">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" style="display: none;">0</span>
+                </button>
+                <a href="../#courses" class="btn btn--primary">Conheça Nossos Cursos</a>
+                <div class="nav__toggle" id="nav-toggle"><i class="fas fa-bars"></i></div>
+            </div>
+            
+            <div class="mini-cart" id="mini-cart">
+                <div class="mini-cart__header">
+                    <h4>Seu Carrinho</h4>
+                    <button class="mini-cart__close" id="mini-cart-close"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="mini-cart__body" id="mini-cart-body"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero__breadcrumb">
+                    <a href="../">Home</a> / <span>Conteúdo Gratuito</span>
+                </div>
+                <h1 class="page-hero__title">Blog de Arte Digital</h1>
+                <p class="page-hero__description">
+                    Esse é o nosso espaço para compartilhar tudo o que sabemos. 
+                    Acesse nosso blog, cursos gratuitos para começar sua jornada na arte digital.
+                </p>
+            </div>
+        </section>
+
+        <!-- Free Content Grid -->
+        <section class="free-content-section section">
+            <div class="container">
+                <h2 class="section__title">Kits Gratuitos</h2>
+                <p class="section__subtitle">Baixe brushes, referências e materiais para suas criações</p>
+                
+                <div class="free-content-grid">
+                    <!-- Kit 1 -->
+                    <div class="free-content-card">
+                        <div class="free-content-card__image">
+                            <span class="free-content-card__badge">Grátis</span>
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <div class="free-content-card__content">
+                            <h3 class="free-content-card__title">Kit de Pincéis Gratuito - Alice Haun</h3>
+                            <p class="free-content-card__description">
+                                Pack de brushes exclusivo para Photoshop e Procreate.
+                            </p>
+                            <a href="#" class="free-content-card__link">
+                                Baixar Kit <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Kit 2 -->
+                    <div class="free-content-card">
+                        <div class="free-content-card__image">
+                            <span class="free-content-card__badge">Grátis</span>
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <div class="free-content-card__content">
+                            <h3 class="free-content-card__title">Kit Grátis: Brushes, Vídeos e Refs</h3>
+                            <p class="free-content-card__description">
+                                Pacote completo com brushes, vídeos tutoriais e referências.
+                            </p>
+                            <a href="#" class="free-content-card__link">
+                                Baixar Kit <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Kit 3 -->
+                    <div class="free-content-card">
+                        <div class="free-content-card__image">
+                            <span class="free-content-card__badge">Grátis</span>
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <div class="free-content-card__content">
+                            <h3 class="free-content-card__title">Kit Referenciais de Esculturas 3D</h3>
+                            <p class="free-content-card__description">
+                                Referências de esculturas e planos para estudo de anatomia.
+                            </p>
+                            <a href="#" class="free-content-card__link">
+                                Baixar Kit <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Kit 4 -->
+                    <div class="free-content-card">
+                        <div class="free-content-card__image">
+                            <span class="free-content-card__badge">Grátis</span>
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <div class="free-content-card__content">
+                            <h3 class="free-content-card__title">Brushes do Photoshop para Cenários</h3>
+                            <p class="free-content-card__description">
+                                Pack especial de brushes para pintura de cenários e ambientes.
+                            </p>
+                            <a href="#" class="free-content-card__link">
+                                Baixar Kit <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Kit 5 -->
+                    <div class="free-content-card">
+                        <div class="free-content-card__image">
+                            <span class="free-content-card__badge">Grátis</span>
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="free-content-card__content">
+                            <h3 class="free-content-card__title">Brushes do Photoshop: Personagens e Mundos</h3>
+                            <p class="free-content-card__description">
+                                Brushes especializados para design de personagens e worldbuilding.
+                            </p>
+                            <a href="#" class="free-content-card__link">
+                                Baixar Kit <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Free Classes -->
+        <section class="free-content-section section" style="background: var(--bg-light);">
+            <div class="container">
+                <h2 class="section__title">Aulas Gratuitas</h2>
+                <p class="section__subtitle">Experimente nosso conteúdo e comece a aprender hoje</p>
+                
+                <div class="free-content-grid">
+                    <!-- Aula 1 -->
+                    <div class="free-content-card">
+                        <div class="free-content-card__image">
+                            <span class="free-content-card__badge">Vídeo Aula</span>
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <div class="free-content-card__content">
+                            <h3 class="free-content-card__title">Pintando um Cenário do Zero no Photoshop</h3>
+                            <p class="free-content-card__description">
+                                Aprenda o processo completo de criação de um cenário do sketch ao render final.
+                            </p>
+                            <a href="#" class="free-content-card__link">
+                                Assistir Aula <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Aula 2 -->
+                    <div class="free-content-card">
+                        <div class="free-content-card__image">
+                            <span class="free-content-card__badge">Vídeo Aula</span>
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <div class="free-content-card__content">
+                            <h3 class="free-content-card__title">Como Criar um Portfólio Ideal para Ser Contratado</h3>
+                            <p class="free-content-card__description">
+                                Dicas práticas para montar um portfólio que impressiona recrutadores.
+                            </p>
+                            <a href="#" class="free-content-card__link">
+                                Assistir Aula <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Aula 3 -->
+                    <div class="free-content-card">
+                        <div class="free-content-card__image">
+                            <span class="free-content-card__badge">Vídeo Aula</span>
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <div class="free-content-card__content">
+                            <h3 class="free-content-card__title">Trabalhe com Pintura Digital</h3>
+                            <p class="free-content-card__description">
+                                Descubra como entrar no mercado de trabalho como pintor digital.
+                            </p>
+                            <a href="#" class="free-content-card__link">
+                                Assistir Aula <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Aula 4 -->
+                    <div class="free-content-card">
+                        <div class="free-content-card__image">
+                            <span class="free-content-card__badge">Vídeo Aula</span>
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <div class="free-content-card__content">
+                            <h3 class="free-content-card__title">Desafio dos 7 Erros - Anatomia Para Artistas</h3>
+                            <p class="free-content-card__description">
+                                Teste seus conhecimentos de anatomia e aprenda com os erros mais comuns.
+                            </p>
+                            <a href="#" class="free-content-card__link">
+                                Assistir Aula <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Aula 5 -->
+                    <div class="free-content-card">
+                        <div class="free-content-card__image">
+                            <span class="free-content-card__badge">Vídeo Aula</span>
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <div class="free-content-card__content">
+                            <h3 class="free-content-card__title">Expressão Visual em Contos de Fadas</h3>
+                            <p class="free-content-card__description">
+                                Aprenda técnicas de storytelling visual através de contos de fadas.
+                            </p>
+                            <a href="#" class="free-content-card__link">
+                                Assistir Aula <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Aula 6 -->
+                    <div class="free-content-card">
+                        <div class="free-content-card__image">
+                            <span class="free-content-card__badge">Vídeo Aula</span>
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <div class="free-content-card__content">
+                            <h3 class="free-content-card__title">Concept Art para Studios</h3>
+                            <p class="free-content-card__description">
+                                Entenda o que os estúdios esperam de um concept artist profissional.
+                            </p>
+                            <a href="#" class="free-content-card__link">
+                                Assistir Aula <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Articles -->
+        <section class="free-content-section section">
+            <div class="container">
+                <h2 class="section__title">Artigos do Blog</h2>
+                <p class="section__subtitle">Tutoriais e dicas sobre arte digital</p>
+                
+                <div class="free-content-grid">
+                    <!-- Artigo 1 -->
+                    <div class="free-content-card">
+                        <div class="free-content-card__image">
+                            <span class="free-content-card__badge">Artigo</span>
+                            <i class="fas fa-newspaper"></i>
+                        </div>
+                        <div class="free-content-card__content">
+                            <h3 class="free-content-card__title">Bolha Social, Horizontes e Experiências de Vida</h3>
+                            <p class="free-content-card__description">
+                                Como expandir seus horizontes criativos através de novas experiências.
+                            </p>
+                            <a href="#" class="free-content-card__link">
+                                Ler Artigo <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Artigo 2 -->
+                    <div class="free-content-card">
+                        <div class="free-content-card__image">
+                            <span class="free-content-card__badge">Artigo</span>
+                            <i class="fas fa-newspaper"></i>
+                        </div>
+                        <div class="free-content-card__content">
+                            <h3 class="free-content-card__title">Hábitos Extra Arte</h3>
+                            <p class="free-content-card__description">
+                                Hábitos que complementam sua prática artística e melhoram seus resultados.
+                            </p>
+                            <a href="#" class="free-content-card__link">
+                                Ler Artigo <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Artigo 3 -->
+                    <div class="free-content-card">
+                        <div class="free-content-card__image">
+                            <span class="free-content-card__badge">Artigo</span>
+                            <i class="fas fa-newspaper"></i>
+                        </div>
+                        <div class="free-content-card__content">
+                            <h3 class="free-content-card__title">Artista Estuda</h3>
+                            <p class="free-content-card__description">
+                                A importância do estudo contínuo na carreira de um artista digital.
+                            </p>
+                            <a href="#" class="free-content-card__link">
+                                Ler Artigo <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Pronto para ir além do gratuito?</h2>
+                <p>Conheça nossos cursos completos e acelere sua jornada na arte digital</p>
+                <a href="../#courses" class="btn btn--primary btn--lg">Ver Cursos Pagos</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="../" class="footer__logo"><span class="logo-icon">🌳</span><span class="logo-text">Skill<span class="highlight">tree</span></span></a>
+                    <p class="footer__description">A maior escola online de arte digital.</p>
+                    <div class="footer__social">
+                        <a href="https://instagram.com/skilltreecursos" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com/skilltreecursos" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://youtube.com/skilltreecursos" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer__links">
+                    <h4>Cursos</h4>
+                    <ul>
+                        <li><a href="../cursos/fundamentos-da-arte/">Fundamentos da Arte</a></li>
+                        <li><a href="../cursos/concept-art-de-cenarios/">Concept Art de Cenários</a></li>
+                        <li><a href="../cursos/anatomia-para-artistas/">Anatomia Para Artistas</a></li>
+                        <li><a href="../cursos/design-de-personagens-e-worldbuilding/">Design de Personagens</a></li>
+                        <li><a href="../cursos/pintura-digital-e-storytelling/">Pintura Digital</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <h4>Institucional</h4>
+                    <ul>
+                        <li><a href="../gratuitos/">Cursos Gratuitos</a></li>
+                        <li><a href="../professores/">Professores</a></li>
+                        <li><a href="../galeria/">Galeria</a></li>
+                        <li><a href="../politica-de-privacidade/">Política de Privacidade</a></li>
+                        <li><a href="../carreira/">Trabalhe Conosco</a></li>
+                    </ul>
+                </div>
+                <div class="footer__contact">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-envelope"></i> atendimento@skilltree.com.br</p>
+                    <p><i class="fab fa-instagram"></i> @skilltreecursos</p>
+                </div>
+            </div>
+            <div class="footer__bottom"><p>&copy; 2024 Skilltree. Todos os direitos reservados.</p></div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/cart.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

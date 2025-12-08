@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="course-card">
+    <a href="#" class="course-link">
+        <div class="course-image">
+            <img src="URL-DA-IMAGEM-AQUI" alt="Imagem do curso">
+        </div>
+
+        <div class="course-content">
+
+            <div class="course-tags">
+                <span class="tag bestseller">🏆 Campeão de vendas</span>
+                <span class="tag live">🔴 Ao vivo</span>
+                <span class="tag duration">⏱ 4 meses</span>
+            </div>
+
+            <h3 class="course-title">FUNDAMENTOS DA ARTE</h3>
+            <p class="course-subtitle">Matricule-se até 20 de Janeiro</p>
+
+            <p class="course-description">
+                Este curso é o alicerce para qualquer artista. Aprenda técnicas fundamentais
+                que vão elevar sua arte e prepará-lo para uma carreira sólida na indústria criativa.
+            </p>
+        </div>
+    </a>
+</div>
+<style>
+    .course-card {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.course-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.course-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Conteúdo */
+.course-content {
+    padding: 20px;
+}
+
+/* Tags */
+.course-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.tag {
+    padding: 4px 10px;
+    font-size: 12px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border: 1px solid #ddd;
+}
+
+.bestseller {
+    background: #0D8A50;
+    color: white;
+    border-color: #0D8A50;
+}
+
+.live {
+    background: #FDECEC;
+    color: #A80000;
+    border-color: #F5BABA;
+}
+
+.duration {
+    background: white;
+    color: #555;
+}
+
+/* Título */
+.course-title {
+    font-size: 22px;
+    font-weight: 800;
+    margin: 0 0 6px;
+}
+
+/* Subtítulo */
+.course-subtitle {
+    font-size: 14px;
+    color: #0d7d6a;
+    margin-bottom: 14px;
+}
+
+/* Descrição */
+.course-description {
+    color: #777;
+    line-height: 1.5;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 480px) {
+    .course-title {
+        font-size: 18px;
+    }
+}
+
+</style>
+</body>
+</html>

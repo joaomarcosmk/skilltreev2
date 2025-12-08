@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compra confirmada - Skilltree">
+    <title>Compra Confirmada! | Skilltree</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/thankyou.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+    
+    <!-- Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body class="thankyou-page">
+    <!-- Header -->
+    <header class="thankyou-header">
+        <div class="container">
+            <a href="../" class="thankyou-header__logo">
+                <span class="logo-icon">🌳</span>
+                <span class="logo-text">Skill<span class="highlight">tree</span></span>
+            </a>
+        </div>
+    </header>
+
+    <main class="thankyou-main">
+        <div class="container">
+            <!-- Success Animation -->
+            <div class="thankyou-success">
+                <div class="thankyou-success__icon">
+                    <i class="fas fa-check"></i>
+                </div>
+            </div>
+
+            <h1 class="thankyou-title">
+                Parabéns, <span id="customer-name">Artista</span>! 🎉
+            </h1>
+            <p class="thankyou-subtitle">
+                Sua compra foi realizada com sucesso!
+            </p>
+
+            <!-- Order Summary -->
+            <div class="thankyou-order">
+                <div class="thankyou-order__header">
+                    <h2>Resumo do Pedido</h2>
+                    <span class="thankyou-order__number">Pedido #<span id="order-number">000000</span></span>
+                </div>
+
+                <div class="thankyou-order__items" id="order-items">
+                    <!-- Dynamically populated -->
+                </div>
+
+                <div class="thankyou-order__total">
+                    <span>Total Pago:</span>
+                    <strong id="order-total">R$ 0,00</strong>
+                </div>
+            </div>
+
+            <!-- Next Steps -->
+            <div class="thankyou-steps">
+                <h3>Próximos Passos</h3>
+                
+                <div class="thankyou-steps__grid">
+                    <div class="thankyou-step">
+                        <div class="thankyou-step__icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4>1. Verifique seu E-mail</h4>
+                        <p>Enviamos os dados de acesso para <strong id="customer-email">seu@email.com</strong></p>
+                    </div>
+
+                    <div class="thankyou-step">
+                        <div class="thankyou-step__icon">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <h4>2. Crie sua Senha</h4>
+                        <p>Clique no link do e-mail para criar sua senha e ativar o acesso</p>
+                    </div>
+
+                    <div class="thankyou-step">
+                        <div class="thankyou-step__icon">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <h4>3. Comece a Estudar</h4>
+                        <p>Acesse a plataforma e inicie sua jornada na arte digital!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="thankyou-ctas">
+                <a href="#" class="btn btn--primary btn--lg">
+                    <i class="fas fa-graduation-cap"></i>
+                    Acessar Área do Aluno
+                </a>
+                <a href="../" class="btn btn--outline btn--lg">
+                    Voltar para o Site
+                </a>
+            </div>
+
+            <!-- Community -->
+            <div class="thankyou-community">
+                <h3>Junte-se à nossa comunidade!</h3>
+                <p>Siga a Skilltree nas redes sociais para dicas, inspirações e novidades.</p>
+                
+                <div class="thankyou-community__social">
+                    <a href="https://instagram.com/skilltreecursos" target="_blank" rel="noopener" class="social-btn social-btn--instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span>@skilltreecursos</span>
+                    </a>
+                    <a href="https://facebook.com/skilltreecursos" target="_blank" rel="noopener" class="social-btn social-btn--facebook">
+                        <i class="fab fa-facebook"></i>
+                        <span>Skilltree Cursos</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Support -->
+            <div class="thankyou-support">
+                <h4>Precisa de ajuda?</h4>
+                <p>Nossa equipe está pronta para te ajudar:</p>
+                <a href="mailto:atendimento@skilltree.com.br">
+                    <i class="fas fa-envelope"></i>
+                    atendimento@skilltree.com.br
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="thankyou-footer">
+        <div class="container">
+            <p>&copy; 2024 Skilltree. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../assets/js/cart.js"></script>
+    <script>
+        (function() {
+            'use strict';
+
+            // Confetti animation
+            function launchConfetti() {
+                confetti({
+                    particleCount: 100,
+                    spread: 70,
+                    origin: { y: 0.6 }
+                });
+
+                setTimeout(() => {
+                    confetti({
+                        particleCount: 50,
+                        angle: 60,
+                        spread: 55,
+                        origin: { x: 0 }
+                    });
+                    confetti({
+                        particleCount: 50,
+                        angle: 120,
+                        spread: 55,
+                        origin: { x: 1 }
+                    });
+                }, 500);
+            }
+
+            // Load order data
+            const lastOrder = JSON.parse(localStorage.getItem('skilltree_last_order') || '{}');
+            const upsellAccepted = localStorage.getItem('skilltree_upsell_accepted') === 'true';
+
+            // Generate order number
+            const orderNumber = Math.floor(Math.random() * 900000) + 100000;
+            document.getElementById('order-number').textContent = orderNumber;
+
+            // Customer info
+            if (lastOrder.customer) {
+                document.getElementById('customer-name').textContent = lastOrder.customer.firstName || 'Artista';
+                document.getElementById('customer-email').textContent = lastOrder.customer.email || 'seu@email.com';
+            }
+
+            // Order items
+            const orderItemsContainer = document.getElementById('order-items');
+            let itemsHtml = '';
+            let total = 0;
+
+            if (lastOrder.items) {
+                lastOrder.items.forEach(item => {
+                    itemsHtml += `
+                        <div class="thankyou-order__item">
+                            <span>${item.name}</span>
+                            <span>${SkillTreeCart.formatCurrency(item.price)}</span>
+                        </div>
+                    `;
+                    total += item.price;
+                });
+            }
+
+            if (lastOrder.orderBump) {
+                itemsHtml += `
+                    <div class="thankyou-order__item thankyou-order__item--bump">
+                        <span><i class="fas fa-gift"></i> ${lastOrder.orderBump.name}</span>
+                        <span>${SkillTreeCart.formatCurrency(lastOrder.orderBump.price)}</span>
+                    </div>
+                `;
+                total += lastOrder.orderBump.price;
+            }
+
+            if (upsellAccepted) {
+                // Add upsell item
+                const upsell = SkillTreeCart.getUpsell(lastOrder.items[0]?.id);
+                if (upsell) {
+                    itemsHtml += `
+                        <div class="thankyou-order__item thankyou-order__item--upsell">
+                            <span><i class="fas fa-rocket"></i> ${upsell.name}</span>
+                            <span>${SkillTreeCart.formatCurrency(upsell.price)}</span>
+                        </div>
+                    `;
+                    total += upsell.price;
+                }
+            }
+
+            orderItemsContainer.innerHTML = itemsHtml;
+
+            // Apply discounts
+            if (lastOrder.discount) {
+                total -= lastOrder.discount;
+            }
+            if (lastOrder.pixDiscount) {
+                total -= lastOrder.pixDiscount;
+            }
+
+            document.getElementById('order-total').textContent = SkillTreeCart.formatCurrency(Math.max(0, total));
+
+            // Launch confetti
+            launchConfetti();
+
+            // Clear cart and order data after displaying
+            setTimeout(() => {
+                localStorage.removeItem('skilltree_cart');
+                localStorage.removeItem('skilltree_last_order');
+                localStorage.removeItem('skilltree_upsell_accepted');
+            }, 5000);
+
+        })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galeria de trabalhos dos alunos da Skilltree - Veja o que nossos alunos conquistaram e se inspire.">
+    <meta name="keywords" content="galeria, portfólio, trabalhos, alunos, arte digital, skilltree">
+    <title>Galeria | Skilltree</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/pages.css">
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="../" class="nav__logo">
+                <span class="logo-icon">🌳</span>
+                <span class="logo-text">Skill<span class="highlight">tree</span></span>
+            </a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="../" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="../#courses" class="nav__link">Cursos</a></li>
+                    <li class="nav__item"><a href="../gratuitos/" class="nav__link">Gratuitos</a></li>
+                    <li class="nav__item"><a href="../professores/" class="nav__link">Professores</a></li>
+                    <li class="nav__item"><a href="../galeria/" class="nav__link active">Galeria</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close"><i class="fas fa-times"></i></div>
+            </div>
+            
+            <div class="nav__actions">
+                <button class="cart-btn" id="cart-btn" aria-label="Carrinho">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" style="display: none;">0</span>
+                </button>
+                <a href="../#courses" class="btn btn--primary">Conheça Nossos Cursos</a>
+                <div class="nav__toggle" id="nav-toggle"><i class="fas fa-bars"></i></div>
+            </div>
+            
+            <div class="mini-cart" id="mini-cart">
+                <div class="mini-cart__header">
+                    <h4>Seu Carrinho</h4>
+                    <button class="mini-cart__close" id="mini-cart-close"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="mini-cart__body" id="mini-cart-body"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero__breadcrumb">
+                    <a href="../">Home</a> / <span>Galeria</span>
+                </div>
+                <h1 class="page-hero__title">Trabalhos dos Alunos</h1>
+                <p class="page-hero__description">
+                    Confira o portfólio dos nossos alunos e veja o que você pode conquistar 
+                    estudando na Skilltree.
+                </p>
+            </div>
+        </section>
+
+        <!-- Gallery Categories -->
+        <section class="gallery-section section">
+            <div class="container">
+                <div class="gallery-categories">
+                    <a href="../galeria/" class="gallery-category active">Todos</a>
+                    <a href="../galeria/fundamentos-da-arte/" class="gallery-category">Fundamentos da Arte</a>
+                    <a href="../galeria/concept-art-de-cenarios/" class="gallery-category">Concept Art de Cenários</a>
+                    <a href="../galeria/anatomia-de-artistas/" class="gallery-category">Anatomia</a>
+                    <a href="../galeria/design-de-personagens-e-worldbuilding/" class="gallery-category">Design de Personagens</a>
+                    <a href="../galeria/storytelling-e-expressao-visual/" class="gallery-category">Storytelling</a>
+                    <a href="../galeria/ilustracao-e-splash-art/" class="gallery-category">Ilustração</a>
+                </div>
+
+                <!-- Gallery Grid -->
+                <div class="gallery-grid">
+                    <!-- Placeholder items - would be replaced with real images -->
+                    <div class="gallery-card placeholder">
+                        <i class="fas fa-image"></i>
+                        <div class="gallery-card__overlay">
+                            <div class="gallery-card__title">Arte de Cenário</div>
+                            <div class="gallery-card__author">Aluno Skilltree</div>
+                        </div>
+                    </div>
+                    <div class="gallery-card placeholder">
+                        <i class="fas fa-image"></i>
+                        <div class="gallery-card__overlay">
+                            <div class="gallery-card__title">Personagem Fantasy</div>
+                            <div class="gallery-card__author">Aluno Skilltree</div>
+                        </div>
+                    </div>
+                    <div class="gallery-card placeholder">
+                        <i class="fas fa-image"></i>
+                        <div class="gallery-card__overlay">
+                            <div class="gallery-card__title">Estudo de Anatomia</div>
+                            <div class="gallery-card__author">Aluno Skilltree</div>
+                        </div>
+                    </div>
+                    <div class="gallery-card placeholder">
+                        <i class="fas fa-image"></i>
+                        <div class="gallery-card__overlay">
+                            <div class="gallery-card__title">Ilustração Narrativa</div>
+                            <div class="gallery-card__author">Aluno Skilltree</div>
+                        </div>
+                    </div>
+                    <div class="gallery-card placeholder">
+                        <i class="fas fa-image"></i>
+                        <div class="gallery-card__overlay">
+                            <div class="gallery-card__title">Environment Art</div>
+                            <div class="gallery-card__author">Aluno Skilltree</div>
+                        </div>
+                    </div>
+                    <div class="gallery-card placeholder">
+                        <i class="fas fa-image"></i>
+                        <div class="gallery-card__overlay">
+                            <div class="gallery-card__title">Character Design</div>
+                            <div class="gallery-card__author">Aluno Skilltree</div>
+                        </div>
+                    </div>
+                    <div class="gallery-card placeholder">
+                        <i class="fas fa-image"></i>
+                        <div class="gallery-card__overlay">
+                            <div class="gallery-card__title">Pintura Digital</div>
+                            <div class="gallery-card__author">Aluno Skilltree</div>
+                        </div>
+                    </div>
+                    <div class="gallery-card placeholder">
+                        <i class="fas fa-image"></i>
+                        <div class="gallery-card__overlay">
+                            <div class="gallery-card__title">Estudo de Cores</div>
+                            <div class="gallery-card__author">Aluno Skilltree</div>
+                        </div>
+                    </div>
+                    <div class="gallery-card placeholder">
+                        <i class="fas fa-image"></i>
+                        <div class="gallery-card__overlay">
+                            <div class="gallery-card__title">Worldbuilding</div>
+                            <div class="gallery-card__author">Aluno Skilltree</div>
+                        </div>
+                    </div>
+                    <div class="gallery-card placeholder">
+                        <i class="fas fa-image"></i>
+                        <div class="gallery-card__overlay">
+                            <div class="gallery-card__title">Splash Art</div>
+                            <div class="gallery-card__author">Aluno Skilltree</div>
+                        </div>
+                    </div>
+                    <div class="gallery-card placeholder">
+                        <i class="fas fa-image"></i>
+                        <div class="gallery-card__overlay">
+                            <div class="gallery-card__title">Concept Art</div>
+                            <div class="gallery-card__author">Aluno Skilltree</div>
+                        </div>
+                    </div>
+                    <div class="gallery-card placeholder">
+                        <i class="fas fa-image"></i>
+                        <div class="gallery-card__overlay">
+                            <div class="gallery-card__title">Ilustração</div>
+                            <div class="gallery-card__author">Aluno Skilltree</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Load More -->
+                <div class="text-center" style="margin-top: 3rem;">
+                    <button class="btn btn--outline">Carregar Mais</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Quer aparecer na nossa galeria?</h2>
+                <p>Matricule-se em um de nossos cursos e desenvolva suas habilidades artísticas</p>
+                <a href="../#courses" class="btn btn--primary btn--lg">Ver Cursos</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="../" class="footer__logo"><span class="logo-icon">🌳</span><span class="logo-text">Skill<span class="highlight">tree</span></span></a>
+                    <p class="footer__description">A maior escola online de arte digital.</p>
+                    <div class="footer__social">
+                        <a href="https://instagram.com/skilltreecursos" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com/skilltreecursos" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://youtube.com/skilltreecursos" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer__links">
+                    <h4>Cursos</h4>
+                    <ul>
+                        <li><a href="../cursos/fundamentos-da-arte/">Fundamentos da Arte</a></li>
+                        <li><a href="../cursos/concept-art-de-cenarios/">Concept Art de Cenários</a></li>
+                        <li><a href="../cursos/anatomia-para-artistas/">Anatomia Para Artistas</a></li>
+                        <li><a href="../cursos/design-de-personagens-e-worldbuilding/">Design de Personagens</a></li>
+                        <li><a href="../cursos/pintura-digital-e-storytelling/">Pintura Digital</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <h4>Institucional</h4>
+                    <ul>
+                        <li><a href="../gratuitos/">Cursos Gratuitos</a></li>
+                        <li><a href="../professores/">Professores</a></li>
+                        <li><a href="../galeria/">Galeria</a></li>
+                        <li><a href="../politica-de-privacidade/">Política de Privacidade</a></li>
+                        <li><a href="../carreira/">Trabalhe Conosco</a></li>
+                    </ul>
+                </div>
+                <div class="footer__contact">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-envelope"></i> atendimento@skilltree.com.br</p>
+                    <p><i class="fab fa-instagram"></i> @skilltreecursos</p>
+                </div>
+            </div>
+            <div class="footer__bottom"><p>&copy; 2024 Skilltree. Todos os direitos reservados.</p></div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/cart.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
