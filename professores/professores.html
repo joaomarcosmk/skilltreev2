@@ -9,7 +9,7 @@
         content="arte digital, cursos de arte, concept art, pintura digital, ilustração, design de personagens, anatomia para artistas, skilltree">
     <meta name="author" content="Skilltree">
 
-    <script src="assets/js/main.js" defer></script>
+    <script src="../assets/js/prof-slider.js" defer></script>
 
     <title>Skilltree | Estude Arte Digital</title>
 
@@ -24,10 +24,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="assets/css/index.css">
+    
+    <link rel="stylesheet" href="professores.css">
+    
+
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
 </head>
 <body>
 
@@ -35,7 +38,7 @@
     <header class="header">
         <nav class="navbar">
             <div class="navbar__logo">
-                <img src="assets/images/logo_skilltree.svg" alt="Skilltree">
+                <img src="../assets/images/logo_skilltree.svg" alt="Skilltree">
             </div>
 
             <ul class="navbar__menu">
@@ -44,24 +47,24 @@
                         Cursos <span class="arrow">▾</span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="cursos/fundamentos-da-arte/fundamentos.html">Fundamentos da Arte</a></li>
-                        <li><a href="cursos/concept-art-de-cenarios/concept.html">Concept Art de Cenários</a></li>
-                        <li><a href="cursos/pintura-digital-e-storytelling/pintura.html">Pintura Digital e Storytelling</a></li>
-                        <li><a href="cursos/anatomia-para-artistas/anatomia.html">Anatomia para Artistas</a></li>
-                        <li><a href="cursos/design-de-personagens-e-worldbuilding/designartista.html">Design de Personagens</a></li>
-                        <li><a href="cursos/worldbuilding/worldbuilding.html">Worldbuilding</a></li>
+                        <li><a href="../cursos/fundamentos-da-arte/fundamentos.html">Fundamentos da Arte</a></li>
+                        <li><a href="../cursos/concept-art-de-cenarios/concept.html">Concept Art de Cenários</a></li>
+                        <li><a href="../cursos/pintura-digital-e-storytelling/pintura.html">Pintura Digital e Storytelling</a></li>
+                        <li><a href="../cursos/anatomia-para-artistas/anatomia.html">Anatomia para Artistas</a></li>
+                        <li><a href="../cursos/design-de-personagens-e-worldbuilding/designartista.html">Design de Personagens</a></li>
+                        <li><a href="../cursos/worldbuilding/worldbuilding.html">Worldbuilding</a></li>
                     </ul>
                 </li>
 
-                <li><a href="professores/professores.html">Professores</a></li>
+                <li><a href="../professores/professores.html">Professores</a></li>
                 <li><a href="#">Galeria</a></li>
                 <li><a href="#">Gratuitos</a></li>
             </ul>
 
             <div class="navbar__social">
-                <a href="#"><img src="assets/images/instagram.svg" class="icon" alt="Instagram"></a>
-                <a href="#"><img src="assets/images/youtube.svg" class="icon" alt="YouTube"></a>
-                <a href="#"><img src="assets/images/discord.svg" class="icon" alt="Discord"></a>
+                <a href="#"><img src="../assets/images/instagram.svg" class="icon" alt="Instagram"></a>
+                <a href="#"><img src="../assets/images/youtube.svg" class="icon" alt="YouTube"></a>
+                <a href="#"><img src="../assets/images/discord.svg" class="icon" alt="Discord"></a>
             </div>
         </nav>
     </header>
@@ -71,146 +74,273 @@
             <div class="subtitle">Estude Arte Digital na Skilltree</div>
 
             <h1>
-                DESENVOLVA SUA<br>
-                <span>CARREIRA ARTÍSTICA</span>
+                CONHEÇA OS <span>PROFESSORES</span><br> DA SKILLTREE
             </h1>
 
-            <p>
-                Estude em uma das melhores e maiores escolas online de arte digital e conquiste o seu lugar no mercado.
-            </p>
+            
 
             <!-- <button class="hero__cta">Comece Agora</button> -->
         </div>
     </section>
 
-    <main class="professores-container">
+    <main class="professores-container"> 
+        <section class="teachers-section">
 
-        <!-- BLOCO DE PROFESSOR — repetido 5x -->
-        <section class="prof-card">
-            <div class="prof-info">
-                <h2 class="prof-name">Pedro Dutra</h2>
-                <p class="prof-bio">
-                    Se destaca no mundo da arte digital, combinando uma paixão pelo ensino com uma abordagem criativa e humorística. 
-                    Suas conquistas incluem trabalhos como concept artist para marcas como DC e Marvel, além de ser o fundador da Skilltree Cursos. 
-                    Ele também lidera a Contenda, um coletivo que reúne os talentos mais promissores da formação de Fundamentos. 
-                    Na formação de “Fundamentos da Arte”, Dutra compartilha sua vasta experiência, ensinando artistas de todos os níveis a explorar e expandir suas habilidades criativas.
-                </p>
-
-                <div class="prof-logos">
-                    <img src="#" alt="DC">
-                    <img src="#" alt="Canva">
-                    <img src="#" alt="Marvel">
-                    <img src="#" alt="Yduqs">
-                    <img src="#" alt="007">
-                    <img src="#" alt="Studio Maracujá">
-                    <img src="#" alt="Yucca">
+    <!-- CARD 1 - PEDRO DUTRA -->
+    <article class="teacher-card">
+        <div class="teacher-info">
+            <header class="teacher-header">
+                <div class="teacher-avatar">
+                    <img src="../assets/images/prof-pedro.jpg" alt="Foto de Pedro Dutra">
                 </div>
-
-                <a class="prof-button" href="#">
-                    Conhecer o Curso de Fundamentos da Arte
-                </a>
-            </div>
-
-            <div class="prof-image">
-                <img src="#" alt="Foto do Professor">
-            </div>
-        </section>
-
-        <!-- REPETIR AS ESTRUTURAS PARA OS OUTROS 4 PROFESSORES -->
-        <section class="prof-card">
-            <div class="prof-info">
-                <h2 class="prof-name">Pedro Dutra</h2>
-                <p class="prof-bio">
-                    Se destaca no mundo da arte digital, combinando uma paixão pelo ensino com uma abordagem criativa e humorística. 
-                    Suas conquistas incluem trabalhos como concept artist para marcas como DC e Marvel, além de ser o fundador da Skilltree Cursos. 
-                    Ele também lidera a Contenda, um coletivo que reúne os talentos mais promissores da formação de Fundamentos. 
-                    Na formação de “Fundamentos da Arte”, Dutra compartilha sua vasta experiência, ensinando artistas de todos os níveis a explorar e expandir suas habilidades criativas.
-                </p>
-
-                <div class="prof-logos">
-                    <img src="#">
-                    <img src="#">
-                    <img src="#">
-                    <img src="#">
-                    <img src="#">
-                    <img src="#">
-                    <img src="#">
+                <div class="teacher-heading">
+                    <h2 class="teacher-name">Pedro Dutra</h2>
+                    <p class="teacher-course">Fundamentos da Arte</p>
                 </div>
+            </header>
 
-                <a class="prof-button" href="#">Conhecer o Curso de Fundamentos da Arte</a>
+            <p class="teacher-bio">
+                Se destaca no mundo da arte digital, combinando uma paixão pelo ensino com uma abordagem criativa e humorística.
+                Suas conquistas incluem trabalhos como concept artist para marcas como DC e Marvel, além de ser o fundador da
+                Skilltree Cursos. Ele também lidera a Contenda, um coletivo que reúne os talentos mais promissores da formação
+                de Fundamentos. Na formação de “Fundamentos da Arte”, Dutra compartilha sua vasta experiência, ensinando artistas
+                de todos os níveis a explorar e expandir suas habilidades criativas.
+            </p>
+
+            <div class="teacher-logos">
+                <img src="../assets/images/logo-dc.png" alt="DC">
+                <img src="../assets/images/logo-gainax.png" alt="Gainax">
+                <img src="../assets/images/logo-marvel.png" alt="Marvel">
+                <img src="../assets/images/logo-skilltree.png" alt="Skilltree">
+                <img src="../assets/images/logo-yucca.png" alt="Yucca">
             </div>
 
-            <div class="prof-image">
-                <img src="#" alt="Foto do Professor">
-            </div>
-        </section>
+            <a href="#" class="teacher-button">
+                Conhecer o curso de Fundamentos da Arte
+            </a>
+        </div>
 
-        <section class="prof-card">
-            <div class="prof-info">
-                <h2 class="prof-name">Pedro Dutra</h2>
-                <p class="prof-bio">
-                    Se destaca no mundo da arte digital, combinando uma paixão pelo ensino com uma abordagem criativa e humorística. 
-                    Suas conquistas incluem trabalhos como concept artist para marcas como DC e Marvel, além de ser o fundador da Skilltree Cursos. 
-                    Ele também lidera a Contenda, um coletivo que reúne os talentos mais promissores da formação de Fundamentos. 
-                    Na formação de “Fundamentos da Arte”, Dutra compartilha sua vasta experiência, ensinando artistas de todos os níveis a explorar e expandir suas habilidades criativas.
-                </p>
+        <!-- LADO DIREITO: SLIDER (usa o JS que já te passei em .prof-image) -->
+        <div class="prof-image">
+            <img src="../assets/images/slide-pedro-1.webp" alt="Arte de Pedro Dutra">
+            <img src="../assets/images/slide-pedro-2.webp" alt="Arte de Pedro Dutra">
+        </div>
+    </article>
 
-                <div class="prof-logos">
-                    <img src="#"><img src="#"><img src="#">
-                    <img src="#"><img src="#"><img src="#"><img src="#">
+    <!-- CARD 2 - EXEMPLO (DUPLIQUE E EDITE PARA OS OUTROS) -->
+    <article class="teacher-card">
+        <div class="teacher-info">
+            <header class="teacher-header">
+                <div class="teacher-avatar">
+                    <img src="../assets/images/prof-kevin.jpg" alt="Foto de Kevin">
                 </div>
-
-                <a class="prof-button" href="#">Conhecer o Curso de Fundamentos da Arte</a>
-            </div>
-
-            <div class="prof-image">
-                <img src="#" alt="Foto do Professor">
-            </div>
-        </section>
-
-        <section class="prof-card">
-            <div class="prof-info">
-                <h2 class="prof-name">Pedro Dutra</h2>
-                <p class="prof-bio">Se destaca no mundo da arte digital, combinando uma paixão pelo ensino com uma abordagem criativa e humorística. 
-                    Suas conquistas incluem trabalhos como concept artist para marcas como DC e Marvel, além de ser o fundador da Skilltree Cursos. 
-                    Ele também lidera a Contenda, um coletivo que reúne os talentos mais promissores da formação de Fundamentos. 
-                    Na formação de “Fundamentos da Arte”, Dutra compartilha sua vasta experiência, ensinando artistas de todos os níveis a explorar e expandir suas habilidades criativas.
-                </p>
-
-                <div class="prof-logos">
-                    <img src="#"><img src="#"><img src="#">
-                    <img src="#"><img src="#"><img src="#"><img src="#">
+                <div class="teacher-heading">
+                    <h2 class="teacher-name">Kevin Gnutzmans</h2>
+                    <p class="teacher-course">Concept Art de Cenários</p>
                 </div>
+            </header>
 
-                <a class="prof-button" href="#">Conhecer o Curso de Fundamentos da Arte</a>
+            <p class="teacher-bio">
+                Artista de renome internacional, conhecido por suas composições únicas e narrativas visuais intensas, com
+                habilidades que vão desde o domínio avançado do Blender até conhecimentos sólidos em Photoshop e Clip Studio.
+                Seu trabalho se destaca pelo uso criativo da luz, cor e atmosfera.
+            </p>
+
+            <div class="teacher-logos">
+                <img src="../assets/images/logo-gainax.png" alt="Gainax">
+                <img src="../assets/images/logo-yucca.png" alt="Yucca">
+                <img src="../assets/images/logo-skilltree.png" alt="Skilltree">
             </div>
 
-            <div class="prof-image">
-                <img src="#" alt="Foto do Professor">
-            </div>
-        </section>
+            <a href="#" class="teacher-button">
+                Conhecer o curso de Concept Art de Cenários
+            </a>
+        </div>
 
-        <section class="prof-card">
-            <div class="prof-info">
-                <h2 class="prof-name">Pedro Dutra</h2>
-                <p class="prof-bio">Se destaca no mundo da arte digital, combinando uma paixão pelo ensino com uma abordagem criativa e humorística. 
-                    Suas conquistas incluem trabalhos como concept artist para marcas como DC e Marvel, além de ser o fundador da Skilltree Cursos. 
-                    Ele também lidera a Contenda, um coletivo que reúne os talentos mais promissores da formação de Fundamentos. 
-                    Na formação de “Fundamentos da Arte”, Dutra compartilha sua vasta experiência, ensinando artistas de todos os níveis a explorar e expandir suas habilidades criativas.
-                </p>
+        <div class="prof-image">
+            <img src="../assets/images/slide-kevin-1.webp" alt="Arte de Kevin">
+            <img src="../assets/images/slide-kevin-2.webp" alt="Arte de Kevin">
+        </div>
+    </article>
 
-                <div class="prof-logos">
-                    <img src="#"><img src="#"><img src="#">
-                    <img src="#"><img src="#"><img src="#"><img src="#">
+    <article class="teacher-card">
+        <div class="teacher-info">
+            <header class="teacher-header">
+                <div class="teacher-avatar">
+                    <img src="../assets/images/prof-kevin.jpg" alt="Foto de Kevin">
                 </div>
+                <div class="teacher-heading">
+                    <h2 class="teacher-name">Kevin Gnutzmans</h2>
+                    <p class="teacher-course">Concept Art de Cenários</p>
+                </div>
+            </header>
 
-                <a class="prof-button" href="#">Conhecer o Curso de Fundamentos da Arte</a>
+            <p class="teacher-bio">
+                Artista de renome internacional, conhecido por suas composições únicas e narrativas visuais intensas, com
+                habilidades que vão desde o domínio avançado do Blender até conhecimentos sólidos em Photoshop e Clip Studio.
+                Seu trabalho se destaca pelo uso criativo da luz, cor e atmosfera.
+            </p>
+
+            <div class="teacher-logos">
+                <img src="../assets/images/logo-gainax.png" alt="Gainax">
+                <img src="../assets/images/logo-yucca.png" alt="Yucca">
+                <img src="../assets/images/logo-skilltree.png" alt="Skilltree">
             </div>
 
-            <div class="prof-image">
-                <img src="#" alt="Foto do Professor">
+            <a href="#" class="teacher-button">
+                Conhecer o curso de Concept Art de Cenários
+            </a>
+        </div>
+
+        <div class="prof-image">
+            <img src="../assets/images/slide-kevin-1.webp" alt="Arte de Kevin">
+            <img src="../assets/images/slide-kevin-2.webp" alt="Arte de Kevin">
+        </div>
+    </article>
+
+    <article class="teacher-card">
+        <div class="teacher-info">
+            <header class="teacher-header">
+                <div class="teacher-avatar">
+                    <img src="../assets/images/prof-kevin.jpg" alt="Foto de Kevin">
+                </div>
+                <div class="teacher-heading">
+                    <h2 class="teacher-name">Kevin Gnutzmans</h2>
+                    <p class="teacher-course">Concept Art de Cenários</p>
+                </div>
+            </header>
+
+            <p class="teacher-bio">
+                Artista de renome internacional, conhecido por suas composições únicas e narrativas visuais intensas, com
+                habilidades que vão desde o domínio avançado do Blender até conhecimentos sólidos em Photoshop e Clip Studio.
+                Seu trabalho se destaca pelo uso criativo da luz, cor e atmosfera.
+            </p>
+
+            <div class="teacher-logos">
+                <img src="../assets/images/logo-gainax.png" alt="Gainax">
+                <img src="../assets/images/logo-yucca.png" alt="Yucca">
+                <img src="../assets/images/logo-skilltree.png" alt="Skilltree">
             </div>
-        </section>
+
+            <a href="#" class="teacher-button">
+                Conhecer o curso de Concept Art de Cenários
+            </a>
+        </div>
+
+        <div class="prof-image">
+            <img src="../assets/images/slide-kevin-1.webp" alt="Arte de Kevin">
+            <img src="../assets/images/slide-kevin-2.webp" alt="Arte de Kevin">
+        </div>
+    </article>
+
+    <article class="teacher-card">
+        <div class="teacher-info">
+            <header class="teacher-header">
+                <div class="teacher-avatar">
+                    <img src="../assets/images/prof-kevin.jpg" alt="Foto de Kevin">
+                </div>
+                <div class="teacher-heading">
+                    <h2 class="teacher-name">Kevin Gnutzmans</h2>
+                    <p class="teacher-course">Concept Art de Cenários</p>
+                </div>
+            </header>
+
+            <p class="teacher-bio">
+                Artista de renome internacional, conhecido por suas composições únicas e narrativas visuais intensas, com
+                habilidades que vão desde o domínio avançado do Blender até conhecimentos sólidos em Photoshop e Clip Studio.
+                Seu trabalho se destaca pelo uso criativo da luz, cor e atmosfera.
+            </p>
+
+            <div class="teacher-logos">
+                <img src="../assets/images/logo-gainax.png" alt="Gainax">
+                <img src="../assets/images/logo-yucca.png" alt="Yucca">
+                <img src="../assets/images/logo-skilltree.png" alt="Skilltree">
+            </div>
+
+            <a href="#" class="teacher-button">
+                Conhecer o curso de Concept Art de Cenários
+            </a>
+        </div>
+
+        <div class="prof-image">
+            <img src="../assets/images/slide-kevin-1.webp" alt="Arte de Kevin">
+            <img src="../assets/images/slide-kevin-2.webp" alt="Arte de Kevin">
+        </div>
+    </article>
+
+    <article class="teacher-card">
+        <div class="teacher-info">
+            <header class="teacher-header">
+                <div class="teacher-avatar">
+                    <img src="../assets/images/prof-kevin.jpg" alt="Foto de Kevin">
+                </div>
+                <div class="teacher-heading">
+                    <h2 class="teacher-name">Kevin Gnutzmans</h2>
+                    <p class="teacher-course">Concept Art de Cenários</p>
+                </div>
+            </header>
+
+            <p class="teacher-bio">
+                Artista de renome internacional, conhecido por suas composições únicas e narrativas visuais intensas, com
+                habilidades que vão desde o domínio avançado do Blender até conhecimentos sólidos em Photoshop e Clip Studio.
+                Seu trabalho se destaca pelo uso criativo da luz, cor e atmosfera.
+            </p>
+
+            <div class="teacher-logos">
+                <img src="../assets/images/logo-gainax.png" alt="Gainax">
+                <img src="../assets/images/logo-yucca.png" alt="Yucca">
+                <img src="../assets/images/logo-skilltree.png" alt="Skilltree">
+            </div>
+
+            <a href="#" class="teacher-button">
+                Conhecer o curso de Concept Art de Cenários
+            </a>
+        </div>
+
+        <div class="prof-image">
+            <img src="../assets/images/slide-kevin-1.webp" alt="Arte de Kevin">
+            <img src="../assets/images/slide-kevin-2.webp" alt="Arte de Kevin">
+        </div>
+    </article>
+
+    <article class="teacher-card">
+        <div class="teacher-info">
+            <header class="teacher-header">
+                <div class="teacher-avatar">
+                    <img src="../assets/images/prof-kevin.jpg" alt="Foto de Kevin">
+                </div>
+                <div class="teacher-heading">
+                    <h2 class="teacher-name">Kevin Gnutzmans</h2>
+                    <p class="teacher-course">Concept Art de Cenários</p>
+                </div>
+            </header>
+
+            <p class="teacher-bio">
+                Artista de renome internacional, conhecido por suas composições únicas e narrativas visuais intensas, com
+                habilidades que vão desde o domínio avançado do Blender até conhecimentos sólidos em Photoshop e Clip Studio.
+                Seu trabalho se destaca pelo uso criativo da luz, cor e atmosfera.
+            </p>
+
+            <div class="teacher-logos">
+                <img src="../assets/images/logo-gainax.png" alt="Gainax">
+                <img src="../assets/images/logo-yucca.png" alt="Yucca">
+                <img src="../assets/images/logo-skilltree.png" alt="Skilltree">
+            </div>
+
+            <a href="#" class="teacher-button">
+                Conhecer o curso de Concept Art de Cenários
+            </a>
+        </div>
+
+        <div class="prof-image">
+            <img src="../assets/images/slide-kevin-1.webp" alt="Arte de Kevin">
+            <img src="../assets/images/slide-kevin-2.webp" alt="Arte de Kevin">
+        </div>
+    </article>
+
+    
+
+    </section>
 
     </main>
 
@@ -222,16 +352,16 @@
             <!-- Social -->
             <div class="footer-social">
                 <a href="#" aria-label="Instagram">
-                    <img src="assets/images/instaicon.png" alt="Instagram">
+                    <img src="../assets/images/instaicon.png" alt="Instagram">
                 </a>
                 <a href="#" aria-label="YouTube">
-                    <img src="assets/images/yticon.png" alt="YouTube">
+                    <img src="../assets/images/yticon.png" alt="YouTube">
                 </a>
                 <a href="#" aria-label="Spotify">
-                    <img src="assets/images/sptyicon.png" alt="Spotify">
+                    <img src="../assets/images/sptyicon.png" alt="Spotify">
                 </a>
                 <a href="#" aria-label="LinkedIn">
-                    <img src="assets/images/linkedinicon.png" alt="LinkedIn">
+                    <img src="../assets/images/linkedinicon.png" alt="LinkedIn">
                 </a>
             </div>
 

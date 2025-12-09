@@ -1,92 +1,650 @@
-/* HERO */
-.professores-hero {
-    background: url("#") center/cover no-repeat;
-    padding: 160px 20px 140px;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-    text-align: center;
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: "Segoe UI", sans-serif;
+    background: #FFFFFF;
+    color: #111;
 }
 
-.hero-subtitle {
-    color: #fff;
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-    font-weight: 300;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-.hero-title {
-    color: #fff;
-    font-size: 3rem;
-    font-weight: 800;
-    line-height: 1.2;
+/* ========================================================================== */
+/* FONTES – VINILA (H1 e H3)                                                  */
+/* ========================================================================== */
+
+h1, h3 {
+    font-family: "vinila", "Segoe UI", sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin: 0;
 }
 
-/* CONTAINER */
-.professores-container {
-    max-width: 1200px;
+/* ========================================================================== */
+/* HEADER                                                                     */
+/* ========================================================================== */
+
+.header {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    width: calc(100% - 40px);
+    transform: translateX(-50%);
+    z-index: 9999;
+}
+
+.navbar {
+    background: #ffffff;
+    padding: 18px 40px;
+    border-radius: 40px;
+    box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.15);
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 80px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-/* CARD DO PROFESSOR */
-.prof-card {
+/* LOGO */
+.navbar__logo img {
+    height: 45px;
+}
+
+/* MENU */
+.navbar__menu {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar__menu a {
+    text-decoration: none;
+    color: #666;
+    font-size: 18px;
+    font-weight: 700;
+    transition: color .2s;
+}
+
+.navbar__menu a:hover {
+    color: #222;
+}
+
+/* DROPDOWN */
+.dropdown {
+    position: relative;
+}
+
+.arrow {
+    font-size: 12px;
+    opacity: .6;
+}
+
+.dropdown-menu {
+    list-style: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+
+    min-width: 240px;
+    padding: 10px 0;
+    margin: 0;
+
     background: #fff;
-    border-radius: 26px;
-    padding: 40px;
-    margin-bottom: 60px;
-    display: grid;
-    grid-template-columns: 1fr 330px;
-    gap: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+    display: none;
+    z-index: 20;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 12px 20px;
+    color: #444;
+    font-size: 15px;
+}
+
+.dropdown-menu li a:hover {
+    background: #f5f5f5;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* SOCIAL */
+.navbar__social {
+    display: flex;
+    gap: 20px;
     align-items: center;
 }
 
-.prof-name {
-    font-size: 1.6rem;
-    font-weight: 800;
-    margin-bottom: 15px;
+.navbar__social .icon {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    opacity: .45;
+    transition: opacity .2s, transform .2s;
 }
 
-.prof-bio {
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 25px;
-    font-size: 1rem;
+.navbar__social .icon:hover {
+    opacity: 1;
+    transform: translateY(-1px);
 }
 
-/* LOGOS */
-.prof-logos img {
-    height: 32px;
-    margin-right: 20px;
+/* ========================================================================== */
+/* HERO                                                                       */
+/* ========================================================================== */
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    min-height: 700px;
+    position: relative;
+    
+    background-image: url('../assets/images/hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 0 0 85px 85px;
+    overflow: hidden;
+}
+
+/* Overlay */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.08), transparent 55%),
+                rgba(0, 0, 0, 0.30);
+    z-index: 1;
+}
+
+/* CONTENT */
+.hero__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    max-width: 860px;
+
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    z-index: 2;
+    color: white;
+}
+
+.hero .subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    opacity: 0.95;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 1.05;
+}
+
+.hero h1 span {
+    color: #D4AF37;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 18px auto 0;
+    font-size: 18px;
+    opacity: .9;
+}
+
+/* CTA */
+.hero__cta {
+    margin-top: 25px;
+    padding: 15px 40px;
+    font-size: 18px;
+
+    background: #e8b63f;
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+    font-weight: 700;
+    color: #111;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+    transition: transform .15s, box-shadow .15s, background .15s;
+}
+
+.hero__cta:hover {
+    background: #f2c24a;
+    transform: translateY(-2px);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* ========================================================================== */
+/* RESPONSIVIDADE GERAL DO HERO & HEADER                                     */
+/* ========================================================================== */
+
+@media (max-width: 1024px) {
+    .navbar__menu {
+        gap: 30px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero__content {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 14px 22px;
+    }
+
+    .navbar__menu {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero {
+        min-height: 620px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        min-height: 550px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero__cta {
+        font-size: 16px;
+        padding: 12px 28px;
+    }
+}
+
+/* ============================== */
+/* SECTION - CARD DO PROFESSOR    */
+/* ============================== */
+
+/* =============================== */
+/* SECTION NOSSOS PROFESSORES      */
+/* =============================== */
+
+.teachers-section {
+    max-width: 1180px;
+    margin: 40px auto 80px;
+    padding: 0 20px;
+}
+
+/* CARD PRINCIPAL */
+
+.teacher-card {
+    background: #f3f3f3;
+    border-radius: 20px;
+    padding: 26px 28px;
+    margin-bottom: 26px;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    gap: 32px;
+    align-items: stretch;
+
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+/* LADO ESQUERDO: INFO */
+
+.teacher-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* HEADER: FOTO + NOME + CURSO */
+
+.teacher-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 14px;
+}
+
+.teacher-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 18px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.teacher-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.teacher-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.teacher-name {
+    font-family: "Vinila", "Segoe UI", system-ui, sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin: 0;
+    color: #222;
+}
+
+.teacher-course {
+    font-size: 0.78rem;
+    color: #888;
+    margin: 0;
+}
+
+/* TEXTO / BIO */
+
+.teacher-bio {
+    font-size: 0.78rem;
+    line-height: 1.65;
+    color: #666;
+    margin: 10px 0 18px;
+}
+
+/* LOGOS DAS MARCAS */
+
+.teacher-logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 18px;
+}
+
+.teacher-logos img {
+    height: 22px;
+    max-width: 80px;
+    object-fit: contain;
+    filter: grayscale(10%);
+    opacity: 0.9;
 }
 
 /* BOTÃO */
-.prof-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 28px;
-    background: #f3f3f3;
-    border-radius: 12px;
-    text-decoration: none;
-    color: #111;
+
+.teacher-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 13px 22px;
+    background: #00a86b;
+    color: #fff;
+    border-radius: 999px;
+    font-size: 0.82rem;
     font-weight: 600;
+    text-decoration: none;
+
+    border: 1px solid transparent;
+    transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
 }
 
-/* IMAGEM DO PROFESSOR */
-.prof-image img {
+.teacher-button:hover {
+    background: #01925d;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px rgba(0, 168, 107, 0.25);
+}
+
+/* =============================== */
+/* LADO DIREITO: SLIDER (.prof-image) */
+/* =============================== */
+
+.prof-image {
+    position: relative;
+    border-radius: 18px;
+    overflow: hidden;
+    min-height: 260px; /* garante altura mínima próxima ao print */
+}
+
+/* TRACK e SLIDES (compatível com o JS que te mandei) */
+.prof-slider-track {
+    display: flex;
     width: 100%;
-    border-radius: 22px;
+    height: 100%;
+    transition: transform 0.6s ease;
 }
 
-/* RODAPÉ */
-.prof-footer {
+.prof-slide {
+    min-width: 100%;
+    height: 100%;
+}
+
+.prof-slide img,
+.prof-image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* BOTÕES DO SLIDER */
+
+.prof-slide-prev,
+.prof-slide-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.85);
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.prof-slide-prev { left: 10px; }
+.prof-slide-next { right: 10px; }
+
+.prof-slide-prev:hover,
+.prof-slide-next:hover {
+    background: #ffffff;
+    transform: translateY(-50%) scale(1.05);
+}
+
+/* =============================== */
+/* RESPONSIVIDADE                  */
+/* =============================== */
+
+@media (max-width: 1024px) {
+    .teacher-card {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .prof-image {
+        min-height: 220px;
+    }
+}
+
+@media (max-width: 640px) {
+    .teacher-card {
+        padding: 20px 18px;
+    }
+
+    .teacher-header {
+        align-items: flex-start;
+    }
+
+    .teacher-avatar {
+        width: 70px;
+        height: 70px;
+    }
+
+    .teacher-bio {
+        font-size: 0.76rem;
+    }
+
+    .teacher-button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/* FOOTER                                                                     */
+/* ========================================================================== */
+
+.footer {
+    background: #111;
+    padding: 70px 20px;
+
     text-align: center;
-    padding: 40px 20px;
-    background: #521a1a;
-    color: #fff;
-    font-size: 1.1rem;
+    color: #ccc;
 }
 
-.prof-footer a {
-    color: #fff;
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* SOCIAL */
+
+.footer-social {
+    margin-bottom: 25px;
+
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.footer-social img {
+    width: 26px;
+    height: 26px;
+    opacity: .85;
+    transition: .2s ease;
+}
+
+.footer-social img:hover {
+    opacity: 1;
+}
+
+/* TEXT */
+
+.footer-text {
+    margin-bottom: 20px;
+
+    font-size: .95rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.footer-text a {
+    color: #ccc;
     text-decoration: underline;
+    transition: .2s ease;
+}
+
+.footer-text a:hover {
+    color: #fff;
+}
+
+/* LINKS */
+
+.footer-links {
+    margin-bottom: 25px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-links a {
+    font-size: .9rem;
+    font-weight: 500;
+    color: #ccc;
+
+    text-decoration: underline;
+    transition: .2s ease;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+/* COPYRIGHT */
+
+.footer-copy {
+    font-size: .85rem;
+    color: #888;
+}
+
+/* ========================================================================== */
+/* MASCOTE WHATSAPP                                                           */
+/* ========================================================================== */
+
+#mascote-whatsapp {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    width: 350px;
+    height: 307.9px;
+    z-index: 9999;
+
+    display: block;
+    background: transparent;
+    border-radius: 0;
+    overflow: visible;
+    box-shadow: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#mascote-whatsapp img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/*#mascote-whatsapp:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+}*/
+
+#mascote-whatsapp:active {
+    transform: scale(0.98);
 }
