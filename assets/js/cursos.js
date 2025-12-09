@@ -22,7 +22,7 @@ moduleHeaders.forEach(header => {
     });
 });
 
-<script>
+
 document.addEventListener("DOMContentLoaded", () => {
     const track = document.querySelector(".slider-track");
     const slides = Array.from(track.children);
@@ -66,4 +66,5 @@ document.addEventListener("DOMContentLoaded", () => {
         updateSlider(index === slides.length - 1 ? 0 : index + 1);
     }, 5000);
 });
-</script>
+
+
