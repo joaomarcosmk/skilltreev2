@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,12 +24,235 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/index.css">
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 </head>
 <body>
-    
+
+     <!-- HEADER -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar__logo">
+                <img src="assets/images/logo_skilltree.svg" alt="Skilltree">
+            </div>
+
+            <ul class="navbar__menu">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">
+                        Cursos <span class="arrow">▾</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="cursos/fundamentos-da-arte/fundamentos.html">Fundamentos da Arte</a></li>
+                        <li><a href="cursos/concept-art-de-cenarios/concept.html">Concept Art de Cenários</a></li>
+                        <li><a href="cursos/pintura-digital-e-storytelling/pintura.html">Pintura Digital e Storytelling</a></li>
+                        <li><a href="cursos/anatomia-para-artistas/anatomia.html">Anatomia para Artistas</a></li>
+                        <li><a href="cursos/design-de-personagens-e-worldbuilding/designartista.html">Design de Personagens</a></li>
+                        <li><a href="cursos/worldbuilding/worldbuilding.html">Worldbuilding</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="professores/professores.html">Professores</a></li>
+                <li><a href="#">Galeria</a></li>
+                <li><a href="#">Gratuitos</a></li>
+            </ul>
+
+            <div class="navbar__social">
+                <a href="#"><img src="assets/images/instagram.svg" class="icon" alt="Instagram"></a>
+                <a href="#"><img src="assets/images/youtube.svg" class="icon" alt="YouTube"></a>
+                <a href="#"><img src="assets/images/discord.svg" class="icon" alt="Discord"></a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero__content">
+            <div class="subtitle">Estude Arte Digital na Skilltree</div>
+
+            <h1>
+                DESENVOLVA SUA<br>
+                <span>CARREIRA ARTÍSTICA</span>
+            </h1>
+
+            <p>
+                Estude em uma das melhores e maiores escolas online de arte digital e conquiste o seu lugar no mercado.
+            </p>
+
+            <!-- <button class="hero__cta">Comece Agora</button> -->
+        </div>
+    </section>
+
+    <main class="professores-container">
+
+        <!-- BLOCO DE PROFESSOR — repetido 5x -->
+        <section class="prof-card">
+            <div class="prof-info">
+                <h2 class="prof-name">Pedro Dutra</h2>
+                <p class="prof-bio">
+                    Se destaca no mundo da arte digital, combinando uma paixão pelo ensino com uma abordagem criativa e humorística. 
+                    Suas conquistas incluem trabalhos como concept artist para marcas como DC e Marvel, além de ser o fundador da Skilltree Cursos. 
+                    Ele também lidera a Contenda, um coletivo que reúne os talentos mais promissores da formação de Fundamentos. 
+                    Na formação de “Fundamentos da Arte”, Dutra compartilha sua vasta experiência, ensinando artistas de todos os níveis a explorar e expandir suas habilidades criativas.
+                </p>
+
+                <div class="prof-logos">
+                    <img src="#" alt="DC">
+                    <img src="#" alt="Canva">
+                    <img src="#" alt="Marvel">
+                    <img src="#" alt="Yduqs">
+                    <img src="#" alt="007">
+                    <img src="#" alt="Studio Maracujá">
+                    <img src="#" alt="Yucca">
+                </div>
+
+                <a class="prof-button" href="#">
+                    Conhecer o Curso de Fundamentos da Arte
+                </a>
+            </div>
+
+            <div class="prof-image">
+                <img src="#" alt="Foto do Professor">
+            </div>
+        </section>
+
+        <!-- REPETIR AS ESTRUTURAS PARA OS OUTROS 4 PROFESSORES -->
+        <section class="prof-card">
+            <div class="prof-info">
+                <h2 class="prof-name">Pedro Dutra</h2>
+                <p class="prof-bio">
+                    Se destaca no mundo da arte digital, combinando uma paixão pelo ensino com uma abordagem criativa e humorística. 
+                    Suas conquistas incluem trabalhos como concept artist para marcas como DC e Marvel, além de ser o fundador da Skilltree Cursos. 
+                    Ele também lidera a Contenda, um coletivo que reúne os talentos mais promissores da formação de Fundamentos. 
+                    Na formação de “Fundamentos da Arte”, Dutra compartilha sua vasta experiência, ensinando artistas de todos os níveis a explorar e expandir suas habilidades criativas.
+                </p>
+
+                <div class="prof-logos">
+                    <img src="#">
+                    <img src="#">
+                    <img src="#">
+                    <img src="#">
+                    <img src="#">
+                    <img src="#">
+                    <img src="#">
+                </div>
+
+                <a class="prof-button" href="#">Conhecer o Curso de Fundamentos da Arte</a>
+            </div>
+
+            <div class="prof-image">
+                <img src="#" alt="Foto do Professor">
+            </div>
+        </section>
+
+        <section class="prof-card">
+            <div class="prof-info">
+                <h2 class="prof-name">Pedro Dutra</h2>
+                <p class="prof-bio">
+                    Se destaca no mundo da arte digital, combinando uma paixão pelo ensino com uma abordagem criativa e humorística. 
+                    Suas conquistas incluem trabalhos como concept artist para marcas como DC e Marvel, além de ser o fundador da Skilltree Cursos. 
+                    Ele também lidera a Contenda, um coletivo que reúne os talentos mais promissores da formação de Fundamentos. 
+                    Na formação de “Fundamentos da Arte”, Dutra compartilha sua vasta experiência, ensinando artistas de todos os níveis a explorar e expandir suas habilidades criativas.
+                </p>
+
+                <div class="prof-logos">
+                    <img src="#"><img src="#"><img src="#">
+                    <img src="#"><img src="#"><img src="#"><img src="#">
+                </div>
+
+                <a class="prof-button" href="#">Conhecer o Curso de Fundamentos da Arte</a>
+            </div>
+
+            <div class="prof-image">
+                <img src="#" alt="Foto do Professor">
+            </div>
+        </section>
+
+        <section class="prof-card">
+            <div class="prof-info">
+                <h2 class="prof-name">Pedro Dutra</h2>
+                <p class="prof-bio">Se destaca no mundo da arte digital, combinando uma paixão pelo ensino com uma abordagem criativa e humorística. 
+                    Suas conquistas incluem trabalhos como concept artist para marcas como DC e Marvel, além de ser o fundador da Skilltree Cursos. 
+                    Ele também lidera a Contenda, um coletivo que reúne os talentos mais promissores da formação de Fundamentos. 
+                    Na formação de “Fundamentos da Arte”, Dutra compartilha sua vasta experiência, ensinando artistas de todos os níveis a explorar e expandir suas habilidades criativas.
+                </p>
+
+                <div class="prof-logos">
+                    <img src="#"><img src="#"><img src="#">
+                    <img src="#"><img src="#"><img src="#"><img src="#">
+                </div>
+
+                <a class="prof-button" href="#">Conhecer o Curso de Fundamentos da Arte</a>
+            </div>
+
+            <div class="prof-image">
+                <img src="#" alt="Foto do Professor">
+            </div>
+        </section>
+
+        <section class="prof-card">
+            <div class="prof-info">
+                <h2 class="prof-name">Pedro Dutra</h2>
+                <p class="prof-bio">Se destaca no mundo da arte digital, combinando uma paixão pelo ensino com uma abordagem criativa e humorística. 
+                    Suas conquistas incluem trabalhos como concept artist para marcas como DC e Marvel, além de ser o fundador da Skilltree Cursos. 
+                    Ele também lidera a Contenda, um coletivo que reúne os talentos mais promissores da formação de Fundamentos. 
+                    Na formação de “Fundamentos da Arte”, Dutra compartilha sua vasta experiência, ensinando artistas de todos os níveis a explorar e expandir suas habilidades criativas.
+                </p>
+
+                <div class="prof-logos">
+                    <img src="#"><img src="#"><img src="#">
+                    <img src="#"><img src="#"><img src="#"><img src="#">
+                </div>
+
+                <a class="prof-button" href="#">Conhecer o Curso de Fundamentos da Arte</a>
+            </div>
+
+            <div class="prof-image">
+                <img src="#" alt="Foto do Professor">
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Social -->
+            <div class="footer-social">
+                <a href="#" aria-label="Instagram">
+                    <img src="assets/images/instaicon.png" alt="Instagram">
+                </a>
+                <a href="#" aria-label="YouTube">
+                    <img src="assets/images/yticon.png" alt="YouTube">
+                </a>
+                <a href="#" aria-label="Spotify">
+                    <img src="assets/images/sptyicon.png" alt="Spotify">
+                </a>
+                <a href="#" aria-label="LinkedIn">
+                    <img src="assets/images/linkedinicon.png" alt="LinkedIn">
+                </a>
+            </div>
+
+            <!-- Contact -->
+            <p class="footer-text">
+                Obrigado pela visita! Caso tenha alguma dúvida, entre em contato através do e-mail:<br>
+                <a href="mailto:atendimento@skilltree.com.br">atendimento@skilltree.com.br</a>
+            </p>
+
+            <!-- Useful Links -->
+            <div class="footer-links">
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Trabalhe Conosco</a>
+            </div>
+
+            <!-- Copy -->
+            <div class="footer-copy">
+                © Skilltree | Brasil | 2025
+            </div>
+
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,92 @@
+/* HERO */
+.professores-hero {
+    background: url("#") center/cover no-repeat;
+    padding: 160px 20px 140px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    text-align: center;
+}
+
+.hero-subtitle {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.hero-title {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+/* CONTAINER */
+.professores-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+/* CARD DO PROFESSOR */
+.prof-card {
+    background: #fff;
+    border-radius: 26px;
+    padding: 40px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: 1fr 330px;
+    gap: 40px;
+    align-items: center;
+}
+
+.prof-name {
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.prof-bio {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-size: 1rem;
+}
+
+/* LOGOS */
+.prof-logos img {
+    height: 32px;
+    margin-right: 20px;
+}
+
+/* BOTÃO */
+.prof-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 28px;
+    background: #f3f3f3;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #111;
+    font-weight: 600;
+}
+
+/* IMAGEM DO PROFESSOR */
+.prof-image img {
+    width: 100%;
+    border-radius: 22px;
+}
+
+/* RODAPÉ */
+.prof-footer {
+    text-align: center;
+    padding: 40px 20px;
+    background: #521a1a;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.prof-footer a {
+    color: #fff;
+    text-decoration: underline;
+}
