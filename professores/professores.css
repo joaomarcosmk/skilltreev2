@@ -270,19 +270,25 @@ h1, h3 {
     margin: 18px 0 20px;
 }
 
-/* LOGOS */
+/* LOGOS — Alinhados em uma linha e com tamanho padronizado */
 .teacher-logos {
     display: flex;
-    flex-wrap: wrap;
-    gap: 18px;
-    margin: 10px 0 26px;
+    flex-wrap: nowrap;          /* Impede quebra de linha */
+    gap: 24px;
+    align-items: center;        /* Mantém tudo centralizado verticalmente */
+    overflow-x: auto;           /* Caso estoure em telas muito pequenas */
+    padding-bottom: 6px;        /* Evita corte visual no scroll */
+    margin-bottom: 24px;
 }
 
 .teacher-logos img {
-    height: 28px;
+    height: 16px;               /* Tamanho padronizado */
+    width: auto;                /* Mantém proporção correta */
     object-fit: contain;
-    opacity: 0.85;
+    opacity: 0.9;
+    flex-shrink: 0;             /* Impede que reduza ao colidir */
 }
+
 
 /* CTA */
 .teacher-button {
@@ -292,6 +298,7 @@ h1, h3 {
 
     padding: 16px 32px;
     min-height: 54px;
+    margin-right: 16px;
 
     background: #ffffff;
     color: #008f75;
