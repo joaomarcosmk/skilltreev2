@@ -95,7 +95,7 @@ h1, h3 {
 .dropdown-menu {
     list-style: none;
     position: absolute;
-    top: 35px;
+    top: 45px; /* distância mais confortável e sem gaps */
     left: 0;
 
     min-width: 240px;
@@ -105,8 +105,14 @@ h1, h3 {
     background: #fff;
     border-radius: 12px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
-    display: none;
-    z-index: 20;
+
+    /* TRANSIÇÃO PROFISSIONAL */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity .25s ease, transform .25s ease, visibility .25s ease;
+
+    z-index: 100; /* aumenta segurança */
 }
 
 .dropdown-menu li a {
@@ -114,6 +120,7 @@ h1, h3 {
     padding: 12px 20px;
     color: #444;
     font-size: 15px;
+    white-space: nowrap;
 }
 
 .dropdown-menu li a:hover {
@@ -122,6 +129,12 @@ h1, h3 {
 
 .dropdown:hover .dropdown-menu {
     display: block;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
 
 /* SOCIAL */

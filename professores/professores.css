@@ -412,15 +412,18 @@ h1, h3 {
     font-weight: 600;
     text-decoration: none;
     background-color: rgba(235, 235, 236, 0.5);
-    transition: all 0.25s ease;
+    /*transition: all 0.25s ease;*/
     cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform-origin: center;
 }
 
 
 .teacher-button:hover {
     background-color: rgba(235, 235, 236, 0.5);
     /*color: #ffffff;*/
-    transform: translateY(-2px);
+    /*transform: translateY(-2px);*/
+    transform: scale(1.09);
     box-shadow: 0 6px 18px rgba(0, 143, 117, 0.25);
 }
 
