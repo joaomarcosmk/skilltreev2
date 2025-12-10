@@ -297,48 +297,49 @@ h1, h3 {
 /* SECTION NOSSOS PROFESSORES      */
 /* =============================== */
 
+/* ========================================================= */
+/*  PROFESSORES – LAYOUT PRINCIPAL (GRID)                    */
+/* ========================================================= */
+
 .teachers-section {
     max-width: 1180px;
-    margin: 40px auto 80px;
+    margin: 60px auto 100px;
     padding: 0 20px;
 }
 
-/* CARD PRINCIPAL */
-
+/* CARD PRINCIPAL – GRID 2 COLUNAS */
 .teacher-card {
-    background: #f3f3f3;
+    background: #ECEBEC;
     border-radius: 20px;
-    padding: 26px 28px;
-    margin-bottom: 26px;
+    padding: 40px 40px;
 
     display: grid;
-    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
-    gap: 32px;
-    align-items: stretch;
+    grid-template-columns: 1fr 520px; /* <- Slider fixo */
+    gap: 40px;
 
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    margin-bottom: 40px; /* ajuste fino baseado no site original */
+    align-items: start;
 }
 
-/* LADO ESQUERDO: INFO */
+/* ========================================================= */
+/*  COLUNA ESQUERDA – INFO                                   */
+/* ========================================================= */
 
 .teacher-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    max-width: 100%;
 }
-
-/* HEADER: FOTO + NOME + CURSO */
 
 .teacher-header {
     display: flex;
     align-items: center;
     gap: 14px;
-    margin-bottom: 14px;
+    margin-bottom: 18px;
 }
 
 .teacher-avatar {
-    width: 80px;
-    height: 80px;
+    width: 160px;
+    height: 115px;
     border-radius: 18px;
     overflow: hidden;
     flex-shrink: 0;
@@ -348,7 +349,6 @@ h1, h3 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
 }
 
 .teacher-heading {
@@ -358,153 +358,219 @@ h1, h3 {
 }
 
 .teacher-name {
-    font-family: "Vinila", "Segoe UI", system-ui, sans-serif;
-    font-size: 1.05rem;
+    font-family: "vinila", "Segoe UI", sans-serif;
+    font-size: 1.15rem;
     font-weight: 700;
     margin: 0;
     color: #222;
 }
 
 .teacher-course {
-    font-size: 0.78rem;
-    color: #888;
+    font-size: 0.85rem;
+    color: #777;
     margin: 0;
 }
 
-/* TEXTO / BIO */
-
+/* BIO */
 .teacher-bio {
-    font-size: 0.78rem;
+    font-size: 0.88rem;
     line-height: 1.65;
-    color: #666;
-    margin: 10px 0 18px;
+    color: #555;
+    margin: 18px 0 20px;
 }
 
-/* LOGOS DAS MARCAS */
-
+/* LOGOS */
 .teacher-logos {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    gap: 14px;
-    margin-bottom: 18px;
+    gap: 18px;
+    margin: 10px 0 26px;
 }
 
 .teacher-logos img {
-    height: 22px;
-    max-width: 80px;
+    height: 28px;
     object-fit: contain;
-    filter: grayscale(10%);
-    opacity: 0.9;
+    opacity: 0.85;
 }
 
-/* BOTÃO */
-
+/* CTA */
 .teacher-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
 
-    padding: 13px 22px;
-    background: #00a86b;
-    color: #fff;
-    border-radius: 999px;
-    font-size: 0.82rem;
+    padding: 16px 32px;
+    min-height: 54px;
+
+    background: #ffffff;
+    color: #008f75;
+
+    border: 2px solid #008f75;
+    border-radius: 10px;
+
+    font-size: 1rem;
     font-weight: 600;
     text-decoration: none;
-
-    border: 1px solid transparent;
-    transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+    background-color: rgba(235, 235, 236, 0.5);
+    transition: all 0.25s ease;
+    cursor: pointer;
 }
+
 
 .teacher-button:hover {
-    background: #01925d;
-    transform: translateY(-1px);
-    box-shadow: 0 6px 18px rgba(0, 168, 107, 0.25);
+    background-color: rgba(235, 235, 236, 0.5);
+    /*color: #ffffff;*/
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 143, 117, 0.25);
 }
 
-/* =============================== */
-/* LADO DIREITO: SLIDER (.prof-image) */
-/* =============================== */
 
-.prof-image {
-    position: relative;
-    border-radius: 18px;
+/* ========================================================= */
+/*  COLUNA DIREITA – SLIDER 520×606                          */
+/* ========================================================= */
+
+.teacher-slider {
+    width: 520px;
+    height: 606px;
+
+    border-radius: 20px;
     overflow: hidden;
-    min-height: 260px; /* garante altura mínima próxima ao print */
+    background: #ffffff;
+
+    position: relative;
+    flex-shrink: 0; /* reforço */
 }
 
-/* TRACK e SLIDES (compatível com o JS que te mandei) */
-.prof-slider-track {
+/* Faixa de slides */
+.slider-track {
     display: flex;
     width: 100%;
     height: 100%;
-    transition: transform 0.6s ease;
+    transition: transform .45s ease;
 }
 
-.prof-slide {
-    min-width: 100%;
-    height: 100%;
+/* Cada slide */
+.slide {
+    width: 520px;
+    height: 606px;
+    flex-shrink: 0;
 }
 
-.prof-slide img,
-.prof-image > img {
+.slide img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* cobre a área EXACTAMENTE como no design */
     display: block;
+    cursor: pointer;
 }
 
-/* BOTÕES DO SLIDER */
+/* ========================================================= */
+/*  BOTÕES DO SLIDER                                         */
+/* ========================================================= */
 
-.prof-slide-prev,
-.prof-slide-next {
+.slider-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
+
+    width: 40px;
+    height: 40px;
+
     border: none;
-    background: rgba(255, 255, 255, 0.85);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+
+    color: #111;
+    font-size: 18px;
     cursor: pointer;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
 
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
-    transition: background 0.2s ease, transform 0.15s ease;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+
+    transition: .2s ease;
+    z-index: 10;
 }
 
-.prof-slide-prev { left: 10px; }
-.prof-slide-next { right: 10px; }
-
-.prof-slide-prev:hover,
-.prof-slide-next:hover {
-    background: #ffffff;
-    transform: translateY(-50%) scale(1.05);
+.slider-btn:hover {
+    transform: translateY(-50%) scale(1.08);
+    background: white;
 }
 
-/* =============================== */
-/* RESPONSIVIDADE                  */
-/* =============================== */
+.slider-btn.prev { left: 12px; }
+.slider-btn.next { right: 12px; }
+
+/* ========================================================= */
+/*  LIGHTBOX (ZOOM)                                           */
+/* ========================================================= */
+
+.lightbox {
+    position: fixed;
+    inset: 0;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0,0,0,0.85);
+    z-index: 99999;
+}
+
+.lightbox-img {
+    max-width: 85%;
+    max-height: 85%;
+    border-radius: 12px;
+}
+
+.lightbox-close,
+.lightbox-prev,
+.lightbox-next {
+    position: absolute;
+    background: none;
+    border: none;
+    color: #fff;
+
+    font-size: 3rem;
+    cursor: pointer;
+    z-index: 100000;
+}
+
+.lightbox-close { top: 30px; right: 50px; }
+.lightbox-prev { left: 5%; }
+.lightbox-next { right: 5%; }
+
+/* ========================================================= */
+/*  RESPONSIVIDADE                                            */
+/* ========================================================= */
 
 @media (max-width: 1024px) {
+
     .teacher-card {
         grid-template-columns: 1fr;
-        gap: 22px;
+        padding: 30px;
     }
 
-    .prof-image {
-        min-height: 220px;
+    .teacher-slider {
+        width: 100%;
+        height: 420px; /* reduz proporcionalmente */
+    }
+
+    .slide {
+        width: 100%;
+        height: 420px;
+    }
+
+    .slider-track {
+        height: 420px;
     }
 }
 
 @media (max-width: 640px) {
+
     .teacher-card {
-        padding: 20px 18px;
+        padding: 24px;
     }
 
     .teacher-header {
@@ -517,14 +583,14 @@ h1, h3 {
     }
 
     .teacher-bio {
-        font-size: 0.76rem;
+        font-size: 0.82rem;
     }
 
     .teacher-button {
         width: 100%;
-        text-align: center;
     }
 }
+
 
 
 /* FOOTER                                                                     */
