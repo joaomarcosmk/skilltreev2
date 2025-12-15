@@ -1,0 +1,123 @@
+<section class="faq" data-faq>
+  <div class="faq-container">
+
+    <h2 class="faq-title">PERGUNTAS FREQUENTES</h2>
+
+    <div class="faq-list">
+
+      <article class="faq-item active">
+        <header class="faq-question">
+          <span>1. Nunca pratiquei desenho e ilustração antes, vou conseguir acompanhar a formação?</span>
+          <button class="faq-toggle" aria-label="Alternar">−</button>
+        </header>
+        <div class="faq-answer">
+          <p>
+            Sim, o curso de Fundamentos da Arte é ideal tanto para iniciantes quanto
+            para artistas atuantes no mercado. Os fundamentos são essenciais para um
+            bom desenho e devem estar sempre presentes na rotina de estudos de um
+            profissional, oferecendo um alicerce sólido para todos os níveis de
+            habilidade.
+          </p>
+        </div>
+      </article>
+
+      <article class="faq-item">
+        <header class="faq-question">
+          <span>2. Que materiais vou precisar ao longo da formação?</span>
+          <button class="faq-toggle">+</button>
+        </header>
+        <div class="faq-answer">
+          <p>
+            Você precisará basicamente de um computador, mesa digitalizadora
+            (opcional, mas recomendada) e software de desenho digital como Photoshop
+            ou similares.
+          </p>
+        </div>
+      </article>
+
+      <article class="faq-item">
+        <header class="faq-question">
+          <span>3. Existe alguma atividade em grupo?</span>
+          <button class="faq-toggle">+</button>
+        </header>
+        <div class="faq-answer">
+          <p>
+            Sim. Durante a formação, há atividades colaborativas, desafios e
+            interações entre os alunos para troca de experiências.
+          </p>
+        </div>
+      </article>
+
+      <article class="faq-item">
+        <header class="faq-question">
+          <span>4. Quanto tempo dura a formação? Consigo conciliar com outras atividades?</span>
+          <button class="faq-toggle">+</button>
+        </header>
+        <div class="faq-answer">
+          <p>
+            A formação foi pensada para ser conciliável com outras atividades,
+            exigindo dedicação semanal organizada e flexível.
+          </p>
+        </div>
+      </article>
+
+      <article class="faq-item">
+        <header class="faq-question">
+          <span>5. Quantas horas por semana precisarei dedicar aos estudos?</span>
+          <button class="faq-toggle">+</button>
+        </header>
+        <div class="faq-answer">
+          <p>
+            Em média, recomenda-se de 5 a 7 horas semanais entre aulas ao vivo,
+            exercícios e estudos complementares.
+          </p>
+        </div>
+      </article>
+
+      <article class="faq-item">
+        <header class="faq-question">
+          <span>6. Eu posso tirar dúvidas com o tutor?</span>
+          <button class="faq-toggle">+</button>
+        </header>
+        <div class="faq-answer">
+          <p>
+            Sim. Você terá acesso a monitorias ao vivo e poderá tirar dúvidas
+            diretamente com tutores e professores.
+          </p>
+        </div>
+      </article>
+
+      <article class="faq-item">
+        <header class="faq-question">
+          <span>7. Como assisto às aulas?</span>
+          <button class="faq-toggle">+</button>
+        </header>
+        <div class="faq-answer">
+          <p>
+            As aulas são transmitidas ao vivo e também ficam gravadas para acesso
+            posterior na plataforma.
+          </p>
+        </div>
+      </article>
+
+      <article class="faq-item">
+        <header class="faq-question">
+          <span>8. Onde são postadas as tarefas dos alunos?</span>
+          <button class="faq-toggle">+</button>
+        </header>
+        <div class="faq-answer">
+          <p>
+            As tarefas são postadas na plataforma da Skilltree, com acompanhamento
+            dos monitores.
+          </p>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="faq-cta">
+      <button class="faq-cta-btn">QUERO FAZER ARTES ASSIM</button>
+    </div>
+
+  </div>
+</section>

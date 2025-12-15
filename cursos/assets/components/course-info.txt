@@ -1,0 +1,45 @@
+<section class="course-info" data-course-info>
+  <div class="course-info-container">
+
+    <div class="course-info-text">
+      <h2 class="course-info-title">
+        SUA ARTE, SUA CARREIRA:<br>
+        NA INDÚSTRIA DOS JOGOS,<br>
+        ARTE E ANIMAÇÃO
+      </h2>
+
+      <p class="course-info-description">
+        A arte encontra a oportunidade. Aprenda a criar imagens lindas e úteis
+        para servirem na indústria do entretenimento e em suas obras autorais.
+        Com métodos práticos e insights de quem está todos os dias atuando no
+        mercado, você estará equipado para deixar sua marca no mundo.
+      </p>
+
+      <ul class="course-info-list">
+        <li>
+          <strong>Trabalhe com o que você gosta</strong>
+          <span>Transforme seu amor por desenhar em uma profissão recompensadora.</span>
+        </li>
+
+        <li>
+          <strong>Conquiste reconhecimento</strong>
+          <span>Ganhe destaque e admiração por suas criações únicas.</span>
+        </li>
+
+        <li>
+          <strong>Receba bem pela sua arte</strong>
+          <span>Veja sua paixão se transformar em uma carreira lucrativa.</span>
+        </li>
+      </ul>
+
+      <button class="course-info-cta" data-course-info-cta>
+        QUERO ME INSCREVER
+      </button>
+    </div>
+
+    <div class="course-info-image">
+      <img src="#" alt="Arte do curso" data-course-info-image>
+    </div>
+
+  </div>
+</section>

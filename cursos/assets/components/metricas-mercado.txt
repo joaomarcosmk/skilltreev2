@@ -1,0 +1,31 @@
+<section class="mm" data-mm>
+  <div class="mm-container">
+    <div class="mm-grid">
+
+      <article class="mm-card">
+        <div class="mm-card-value">US$</div>
+        <div class="mm-card-title">Receba em dólar</div>
+        <p class="mm-card-text">
+          Artistas brasileiros estão em alta na demanda internacionalmente.
+        </p>
+      </article>
+
+      <article class="mm-card">
+        <div class="mm-card-value">24.3%</div>
+        <div class="mm-card-title">Crescimento no mercado de Arte Digital</div>
+        <p class="mm-card-text">
+          De acordo com o site FMIModelLab, o mercado global de arte digital está projetado para atingir US$ 12,7 bilhões até 2024.
+        </p>
+      </article>
+
+      <article class="mm-card">
+        <div class="mm-card-value">+1150</div>
+        <div class="mm-card-title">Alunos formados</div>
+        <p class="mm-card-text">
+          Preparados para o sucesso na indústria da arte.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>

@@ -1,17 +1,22 @@
 <section class="course-modules">
 
-  <h2 class="course-modules-title">
-    MÓDULOS DO CURSO
-  </h2>
+  <div class="course-modules-container">
 
-  <div class="course-modules-list" data-modules-list>
-    <!-- módulos injetados via JS -->
-  </div>
+    <h2 class="course-modules-title">
+      MÓDULOS DO CURSO
+    </h2>
 
-  <div class="course-modules-cta">
-    <button class="modules-cta-btn">
-      QUERO ME INSCREVER
-    </button>
+    <div class="course-modules-list" data-modules-list>
+      <!-- módulos injetados via JS -->
+    </div>
+
+    <div class="course-modules-cta">
+      <button class="modules-cta-btn">
+        QUERO ME INSCREVER
+      </button>
+    </div>
+
   </div>
 
 </section>
+

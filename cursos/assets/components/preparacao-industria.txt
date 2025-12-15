@@ -1,0 +1,55 @@
+<section class="pi" data-pi>
+  <div class="pi-container">
+
+    <!-- TEXTO -->
+    <div class="pi-text">
+      <h2 class="pi-title">
+        PREPARE-SE PARA A<br>
+        INDÚSTRIA DA ARTE COM<br>
+        HABILIDADES ESSENCIAIS
+      </h2>
+
+      <p class="pi-description">
+        A Skilltree é sua porta de entrada para um universo de criatividade e
+        inovação em arte digital. Aprenda, aplique e sobressaia com técnicas
+        fundamentais e projetos práticos.
+      </p>
+
+      <ul class="pi-list">
+        <li>
+          <strong>Prática Mercadológica</strong>
+          <span>
+            Mergulhe em projetos que espelham o mercado atual, refinando sua
+            capacidade de produzir arte que engaja e vende.
+          </span>
+        </li>
+
+        <li>
+          <strong>Adaptação e Inovação</strong>
+          <span>
+            Desenvolva a habilidade de adaptar sua arte para as demandas da
+            indústria, mantendo-se inovador e relevante.
+          </span>
+        </li>
+
+        <li>
+          <strong>Projeto para Portfólio</strong>
+          <span>
+            Cada projeto concluído se torna uma peça chave do seu portfólio,
+            preparando-o para as oportunidades que surgirão.
+          </span>
+        </li>
+      </ul>
+
+      <button class="pi-cta" data-pi-cta>
+        QUERO ME INSCREVER
+      </button>
+    </div>
+
+    <!-- IMAGEM -->
+    <div class="pi-image">
+      <img src="#" alt="Arte conceitual do curso">
+    </div>
+
+  </div>
+</section>

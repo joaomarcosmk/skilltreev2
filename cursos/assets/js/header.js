@@ -1,18 +1,38 @@
-/* Detecta automaticamente o caminho correto do header.html */
-(function() {
-    // Conta quantas barras existem no caminho da URL atual.
-    // Quanto mais barras, mais profundo está o arquivo HTML.
-    const depth = window.location.pathname.split("/").length - 2;
+function initHeader() {
+  const dropdowns = document.querySelectorAll(".dropdown");
 
-    // Gera o caminho correto: "../", "../../", "../../../", etc.
-    const prefix = depth === 0 ? "" : "../".repeat(depth);
+  if (!dropdowns.length) return;
 
-    const headerPath = prefix + "../components/header.txt"; 
+  dropdowns.forEach(dropdown => {
+    const trigger = dropdown.querySelector("a");
+    const menu = dropdown.querySelector(".dropdown-menu");
 
-    fetch(headerPath)
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("header-placeholder").innerHTML = data;
-        })
-        .catch(err => console.error("ERRO ao carregar header:", err, "PATH usado:", headerPath));
-})();
+    if (!trigger || !menu) return;
+
+    trigger.addEventListener("click", (e) => {
+      if (window.innerWidth <= 1024) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        closeAllDropdowns(dropdown);
+        dropdown.classList.toggle("is-open");
+      }
+    });
+  });
+
+  document.addEventListener("click", closeAllDropdowns);
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 1024) {
+      closeAllDropdowns();
+    }
+  });
+}
+
+function closeAllDropdowns(exception = null) {
+  document.querySelectorAll(".dropdown.is-open").forEach(dropdown => {
+    if (dropdown !== exception) {
+      dropdown.classList.remove("is-open");
+    }
+  });
+}

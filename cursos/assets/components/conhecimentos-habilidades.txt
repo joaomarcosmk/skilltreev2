@@ -1,0 +1,95 @@
+<section class="ch" data-ch>
+  <div class="ch-container">
+
+    <h2 class="ch-title">
+      CONHECIMENTOS E HABILIDADES QUE VOCÊ ADQUIRIRÁ
+    </h2>
+
+    <div class="ch-content">
+
+      <!-- BLOCO ESQUERDO -->
+      <div class="ch-left">
+
+        <div class="ch-projects">
+          <h3 class="ch-projects-title">7 Projetos para o seu Portfólio</h3>
+          <ol class="ch-projects-list">
+            <li>Ilustrações com técnicas variadas</li>
+            <li>Diversos projetos de luz e sombras</li>
+            <li>Diversos projetos de aplicação de cores</li>
+            <li>Projetos de observação geral</li>
+            <li>Projeto da contenda</li>
+            <li>Diversos projetos de perspectiva</li>
+            <li>Projeto final</li>
+          </ol>
+        </div>
+
+        <div class="ch-certificate">
+          <img src="#" alt="Certificado Skilltree">
+        </div>
+
+      </div>
+
+      <!-- BLOCO DIREITO -->
+      <div class="ch-right">
+
+        <article class="ch-item">
+          <h4>1. Domínio das Técnicas de Desenho e Perspectiva</h4>
+          <p>
+            Domine a arte de dar vida a figuras e formas tridimensionais com
+            precisão e criatividade. Aprenda técnicas avançadas que vão além do
+            básico e que são essenciais para qualquer artista digital aspirante
+            a aperfeiçoar sua obra.
+          </p>
+        </article>
+
+        <article class="ch-item">
+          <h4>2. Exploração Criativa do Design</h4>
+          <p>
+            Mergulhe nos princípios do design e desperte sua criatividade.
+            Desenvolva habilidades para criar narrativas visuais fortes e
+            estabelecer um estilo único, que comunique sua visão ao mundo.
+          </p>
+        </article>
+
+        <article class="ch-item">
+          <h4>3. Entendimento Profundo de Luz e Forma</h4>
+          <p>
+            Descubra como aplicar conceitos de luz e forma para dar realismo e
+            profundidade às suas criações, aprendendo a escolher os tons certos
+            que realçam a tridimensionalidade em diferentes ambientes.
+          </p>
+        </article>
+
+        <article class="ch-item">
+          <h4>4. Domínio da Cor em Arte e Design</h4>
+          <p>
+            Entenda a ciência e a emoção por trás da paleta de cores. Aprenda a
+            misturar e combinar cores com confiança, usando-as para transmitir
+            emoções e fortalecer o impacto visual de seus trabalhos.
+          </p>
+        </article>
+
+        <article class="ch-item">
+          <h4>5. Desenvolvimento de Projetos Autorais</h4>
+          <p>
+            No módulo final, desafie-se a consolidar todo o conhecimento em um
+            projeto autoral, refletindo suas intenções pessoais e aspirações
+            profissionais, dando vida a uma obra verdadeiramente sua.
+          </p>
+        </article>
+
+      </div>
+
+    </div>
+
+    <div class="ch-cta">
+      <button class="ch-cta-btn" data-ch-cta>QUERO ME INSCREVER</button>
+    </div>
+
+  </div>
+
+  <!-- DECOR -->
+  <aside class="ch-mascot" aria-hidden="true">
+    <img src="#" alt="">
+  </aside>
+</section>

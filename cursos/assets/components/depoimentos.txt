@@ -1,0 +1,54 @@
+<section class="testimonials" data-testimonials>
+  <div class="testimonials-container">
+
+    <div class="testimonials-slider">
+
+      <button class="testimonials-nav prev" data-testimonials-prev aria-label="Anterior">
+        ‹
+      </button>
+
+      <div class="testimonials-track" data-testimonials-track>
+
+        <article class="testimonial">
+          <div class="testimonial-avatar">
+            <img src="#" alt="Avatar do aluno">
+          </div>
+
+          <div class="testimonial-content">
+            <p class="testimonial-highlight">
+              “Professores atenciosos e dispostos a ajudar a progredir.”
+            </p>
+
+            <p class="testimonial-text">
+              A Skilltree foi meu primeiro contato com um curso, mesmo tendo uma
+              base pequena, me aprofundar ainda mais nos fundamentos da arte,
+              e melhorar minha forma de pensar com relação a desenho e como
+              artista. Com aulas dinâmicas e colegas dedicados, o ambiente
+              incentiva a evolução constante.
+            </p>
+
+            <div class="testimonial-author">
+              <strong>João Wagner</strong>
+              <span>Ilustrador | Fundamentos da Arte</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Repita article.testimonial para outros depoimentos -->
+
+      </div>
+
+      <button class="testimonials-nav next" data-testimonials-next aria-label="Próximo">
+        ›
+      </button>
+
+    </div>
+
+    <div class="testimonials-dots" data-testimonials-dots></div>
+
+    <div class="testimonials-cta">
+      <button class="testimonials-cta-btn">QUERO ME INSCREVER</button>
+    </div>
+
+  </div>
+</section>

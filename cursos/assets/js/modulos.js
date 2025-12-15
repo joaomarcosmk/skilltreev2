@@ -11,17 +11,21 @@ function initCourseModules() {
     const item = document.createElement("div");
     item.className = "course-module";
 
-    item.innerHTML = `
-      <div class="course-module-header">
-        <span class="course-module-title">
-          ${index + 1}. ${module.title}
-        </span>
-        <span class="course-module-toggle">+</span>
-      </div>
-      <div class="course-module-content">
-        ${module.description}
-      </div>
-    `;
+ item.innerHTML = `
+  <div class="course-module-header">
+    <span class="course-module-title">
+      ${index + 1}. ${module.title}
+    </span>
+    <span class="course-module-toggle">+</span>
+  </div>
+
+  <div class="course-module-content">
+    <div class="course-module-inner">
+      ${module.description}
+    </div>
+  </div>
+`;
+
 
     const header = item.querySelector(".course-module-header");
 

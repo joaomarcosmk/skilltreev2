@@ -1,7 +1,7 @@
-document.addEventListener("DOMContentLoaded", () => {
+function initCourseHero() {
   const courseId = document.body.dataset.course;
 
-  if (!courseId || !COURSES_DATA[courseId]) {
+  if (!courseId || !window.COURSES_DATA || !COURSES_DATA[courseId]) {
     console.warn("Curso não encontrado:", courseId);
     return;
   }
@@ -22,9 +22,12 @@ document.addEventListener("DOMContentLoaded", () => {
      BENEFÍCIOS
   ========================== */
 
-  const benefitEls = document.querySelectorAll(".course-hero-benefit span[data-course-benefit]");
+  const benefitEls = document.querySelectorAll(
+    ".course-hero-benefit span[data-course-benefit]"
+  );
+
   benefitEls.forEach((el, index) => {
-    if (data.benefits[index]) {
+    if (data.benefits?.[index]) {
       el.innerHTML = data.benefits[index].text;
     }
   });
@@ -33,9 +36,9 @@ document.addEventListener("DOMContentLoaded", () => {
      INSCRIÇÃO
   ========================== */
 
-  setText("[data-course-start]", data.enroll.start);
-  setText("[data-course-schedule]", data.enroll.schedule);
-  setText("[data-course-mentoring]", data.enroll.mentoring);
+  setText("[data-course-start]", data.enroll?.start);
+  setText("[data-course-schedule]", data.enroll?.schedule);
+  setText("[data-course-mentoring]", data.enroll?.mentoring);
 
   /* ==========================
      IMAGEM
@@ -47,19 +50,4 @@ document.addEventListener("DOMContentLoaded", () => {
     imageBox.style.backgroundSize = "cover";
     imageBox.style.backgroundPosition = "center";
   }
-});
-
-/* ==========================
-   HELPERS
-========================== */
-
-function setText(selector, value) {
-  const el = document.querySelector(selector);
-  if (el && value) el.textContent = value;
 }
-
-function setHTML(selector, value) {
-  const el = document.querySelector(selector);
-  if (el && value) el.innerHTML = value;
-}
-

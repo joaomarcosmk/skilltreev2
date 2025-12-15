@@ -696,6 +696,12 @@ footer {
   cursor: pointer;
 }
 
+.course-modules-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
 /* RESPONSIVO */
 
 @media (max-width: 768px) {
@@ -704,4 +710,1568 @@ footer {
   }
 }
 
+/* ==========================
+   ACCORDION – ANIMAÇÃO SUAVE
+========================== */
+
+.course-module-content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s ease;
+}
+
+.course-module-inner {
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-6px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+/* ABERTO */
+
+.course-module.is-open .course-module-content {
+  grid-template-rows: 1fr;
+}
+
+.course-module.is-open .course-module-inner {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 /*Modulos do curso*/
+
+/*info do curso*/
+/* ========================================================================== */
+/* COMPONENT: COURSE INFO                                                     */
+/* ========================================================================== */
+
+.course-info {
+    background: #f2f2f0;
+    padding: 100px 20px;
+}
+
+.course-info-container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 60px;
+}
+
+/* TEXTO */
+
+.course-info-title {
+    font-family: vinila, "Segoe UI", sans-serif;
+    font-size: 2.6rem;
+    font-weight: 900;
+    line-height: 1.15;
+    color: #111;
+    margin-bottom: 24px;
+}
+
+.course-info-description {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #555;
+    max-width: 520px;
+    margin-bottom: 36px;
+}
+
+/* LISTA */
+
+.course-info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+}
+
+.course-info-list li {
+    margin-bottom: 18px;
+}
+
+.course-info-list strong {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.course-info-list span {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* CTA */
+
+.course-info-cta {
+    background: #0f6b4f;
+    color: #fff;
+    border: none;
+    padding: 14px 32px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.course-info-cta:hover {
+    background: #0c5a42;
+    transform: translateY(-1px);
+}
+
+/* IMAGEM */
+
+.course-info-image {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.course-info-image img {
+    max-width: 100%;
+    transform: rotate(-10deg);
+    transition: transform 0.4s ease;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 900px) {
+    .course-info-container {
+        grid-template-columns: 1fr;
+    }
+
+    .course-info-image {
+        margin-top: 40px;
+    }
+
+    .course-info-image img {
+        transform: rotate(0deg);
+        max-width: 80%;
+    }
+}
+
+/*info do curso*/
+
+/* ========================================================================== */
+/* COMPONENT: PROFESSOR DO CURSO (pdc)                                         */
+/* ========================================================================== */
+
+.pdc{
+  background:#fff;
+  padding: 70px 20px 90px;
+  position: relative;
+}
+
+.pdc-container{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.pdc-title{
+  font-family: vinila, "Segoe UI", sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  color:#111;
+  text-align:center;
+  font-size: 1.25rem;
+  margin: 0 0 26px;
+  text-transform: uppercase;
+}
+
+/* CARD PRINCIPAL */
+.pdc-feature{
+  background:#efefee;
+  border-radius: 14px;
+  overflow:hidden;
+  display:grid;
+  grid-template-columns: 1.35fr 0.65fr;
+  align-items: stretch;
+  gap: 0;
+  margin: 0 auto 26px;
+}
+
+.pdc-feature-text{
+  padding: 18px 22px;
+}
+
+.pdc-feature-name{
+  margin: 0 0 10px;
+  font-size: .82rem;
+  font-weight: 800;
+  color:#3a3a3a;
+}
+
+.pdc-feature-bio{
+  margin: 0 0 14px;
+  font-size: .72rem;
+  line-height: 1.55;
+  color:#6a6a6a;
+  max-width: 680px;
+}
+
+.pdc-feature-photo{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding: 14px;
+  background: transparent;
+}
+
+.pdc-feature-photo img{
+  width: 100%;
+  height: 100%;
+  max-height: 130px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+/* LOGOS */
+.pdc-logos{
+  display:flex;
+  align-items:center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.pdc-logos img{
+  height: 18px;
+  width: auto;
+  display:block;
+  filter: none;
+  opacity: 1;
+}
+
+.pdc-logos-muted img{
+  height: 18px;
+  opacity: .9;
+}
+
+/* MASCOTE (decorativo) */
+.pdc-mascot{
+  position: absolute;
+  right: 42px;
+  top: 185px;
+  width: 150px;
+  pointer-events:none;
+  user-select:none;
+}
+.pdc-mascot img{
+  width: 100%;
+  height: auto;
+  display:block;
+}
+
+/* PORTFOLIO */
+.pdc-portfolio{
+  display:grid;
+  grid-template-columns: 1fr 0.92fr;
+  gap: 24px;
+  align-items:start;
+  margin: 0 auto 26px;
+}
+
+.pdc-grid{
+  display:grid;
+  gap: 14px;
+}
+
+.pdc-grid-left{
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 92px;
+}
+
+.pdc-grid-right{
+  grid-template-columns: 1fr;
+  grid-auto-rows: 120px;
+}
+
+.pdc-item{
+  background:#f2f2f2;
+  border-radius: 12px;
+  overflow:hidden;
+}
+
+.pdc-item img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  display:block;
+  transform: scale(1);
+  transition: transform .35s ease, filter .35s ease;
+}
+
+.pdc-item:hover img{
+  transform: scale(1.03);
+}
+
+/* variações para “mosaico” semelhante ao print */
+.pdc-span-2{ grid-column: span 2; }
+.pdc-tall{ grid-row: span 3; }
+.pdc-wide{ grid-row: span 2; }
+
+/* CTA */
+.pdc-cta{
+  display:flex;
+  justify-content:center;
+  margin: 6px 0 34px;
+}
+
+.pdc-cta-btn{
+  background:#0f6b4f;
+  color:#fff;
+  border:0;
+  padding: 9px 22px;
+  font-size: .62rem;
+  font-weight: 800;
+  border-radius: 6px;
+  cursor:pointer;
+  transition: transform .2s ease, background .2s ease;
+  text-transform: uppercase;
+}
+
+.pdc-cta-btn:hover{
+  background:#0c5a42;
+  transform: translateY(-1px);
+}
+
+/* CARDS SECUNDÁRIOS */
+.pdc-secondary{
+  display:flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.pdc-card{
+  background:#efefee;
+  border-radius: 14px;
+  padding: 18px 18px;
+  display:grid;
+  grid-template-columns: 84px 1fr;
+  gap: 14px;
+  align-items:start;
+}
+
+.pdc-card-avatar img{
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  object-fit: cover;
+  display:block;
+}
+
+.pdc-card-name{
+  margin: 2px 0 8px;
+  font-size: .78rem;
+  font-weight: 800;
+  color:#3a3a3a;
+}
+
+.pdc-card-text{
+  margin: 0 0 12px;
+  font-size: .68rem;
+  line-height: 1.55;
+  color:#6a6a6a;
+}
+
+/* RESPONSIVO */
+@media (max-width: 980px){
+  .pdc-mascot{ display:none; }
+
+  .pdc-feature{
+    grid-template-columns: 1fr;
+  }
+
+  .pdc-feature-photo{
+    padding: 0 18px 18px;
+  }
+
+  .pdc-portfolio{
+    grid-template-columns: 1fr;
+  }
+
+  .pdc-grid-left{
+    grid-auto-rows: 92px;
+  }
+}
+
+@media (max-width: 520px){
+  .pdc{
+    padding: 60px 16px 80px;
+  }
+
+  .pdc-card{
+    grid-template-columns: 1fr;
+  }
+
+  .pdc-card-avatar img{
+    width: 72px;
+    height: 72px;
+  }
+}
+/*acaba aqui*/
+
+/* ========================================================================== */
+/* COMPONENT: PARA QUEM É INDICADO (pqi)                                       */
+/* ========================================================================== */
+
+.pqi {
+  background: #f4f2f1;
+  padding: 90px 20px;
+  position: relative;
+}
+
+.pqi-container {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* TEXTO */
+
+.pqi-title {
+  font-family: vinila, "Segoe UI", sans-serif;
+  font-weight: 900;
+  font-size: 1.1rem;
+  letter-spacing: -0.4px;
+  margin: 0 0 26px;
+  color: #111;
+}
+
+.pqi-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 34px;
+}
+
+.pqi-list li {
+  margin-bottom: 18px;
+}
+
+.pqi-list strong {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: #2f2f2f;
+  margin-bottom: 4px;
+}
+
+.pqi-list span {
+  font-size: 0.72rem;
+  line-height: 1.5;
+  color: #6a6a6a;
+}
+
+/* CTA */
+
+.pqi-cta {
+  background: #0f6b4f;
+  color: #fff;
+  border: 0;
+  padding: 10px 22px;
+  font-size: 0.62rem;
+  font-weight: 800;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background .2s ease, transform .2s ease;
+  text-transform: uppercase;
+}
+
+.pqi-cta:hover {
+  background: #0c5a42;
+  transform: translateY(-1px);
+}
+
+/* IMAGENS */
+
+.pqi-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 16px;
+}
+
+.pqi-image {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.pqi-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.pqi-image-large {
+  grid-column: span 2;
+}
+
+/* MASCOTE */
+
+.pqi-mascot {
+  position: absolute;
+  right: 40px;
+  top: 120px;
+  width: 130px;
+  pointer-events: none;
+}
+
+.pqi-mascot img {
+  width: 100%;
+  height: auto;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 900px) {
+  .pqi-container {
+    grid-template-columns: 1fr;
+  }
+
+  .pqi-images {
+    order: -1;
+  }
+
+  .pqi-mascot {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .pqi {
+    padding: 70px 16px;
+  }
+}
+/*acaba aqui*/
+
+/* ========================================================================== */
+/* COMPONENT: CONHECIMENTOS E HABILIDADES (ch)                                 */
+/* ========================================================================== */
+
+.ch{
+  background: #0f6b4f;
+  color: #eaf3ef;
+  padding: 90px 20px 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ch-container{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.ch-title{
+  text-align: center;
+  font-family: vinila, "Segoe UI", sans-serif;
+  font-weight: 900;
+  font-size: 1.15rem;
+  letter-spacing: -0.4px;
+  margin: 0 0 46px;
+  color: #ffffff;
+}
+
+/* LAYOUT */
+
+.ch-content{
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+/* ESQUERDA */
+
+.ch-projects{
+  border: 1px dashed rgba(255,255,255,0.35);
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin-bottom: 26px;
+}
+
+.ch-projects-title{
+  margin: 0 0 12px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.ch-projects-list{
+  margin: 0;
+  padding-left: 18px;
+  font-size: 0.7rem;
+  line-height: 1.6;
+  color: #d7ebe4;
+}
+
+.ch-certificate img{
+  width: 160px;
+  display: block;
+}
+
+/* DIREITA */
+
+.ch-item{
+  margin-bottom: 20px;
+}
+
+.ch-item h4{
+  margin: 0 0 6px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.ch-item p{
+  margin: 0;
+  font-size: 0.7rem;
+  line-height: 1.55;
+  color: #d7ebe4;
+}
+
+/* CTA */
+
+.ch-cta{
+  display: flex;
+  justify-content: center;
+  margin-top: 36px;
+}
+
+.ch-cta-btn{
+  background: #e3b43d;
+  color: #1f1f1f;
+  border: 0;
+  padding: 10px 26px;
+  font-size: 0.62rem;
+  font-weight: 800;
+  border-radius: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: transform .2s ease, background .2s ease;
+}
+
+.ch-cta-btn:hover{
+  background: #d4a62f;
+  transform: translateY(-1px);
+}
+
+/* MASCOTE */
+
+.ch-mascot{
+  position: absolute;
+  right: 40px;
+  top: 110px;
+  width: 130px;
+  pointer-events: none;
+}
+
+.ch-mascot img{
+  width: 100%;
+  height: auto;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 980px){
+  .ch-content{
+    grid-template-columns: 1fr;
+  }
+
+  .ch-certificate img{
+    margin-bottom: 24px;
+  }
+
+  .ch-mascot{
+    display: none;
+  }
+}
+
+@media (max-width: 520px){
+  .ch{
+    padding: 70px 16px 90px;
+  }
+}
+
+/*acaba aqui*/
+
+/* ========================================================================== */
+/* COMPONENT: CERTIFICAÇÃO E PROJETOS (cep)                                    */
+/* ========================================================================== */
+
+.cep {
+  background: #0f6b4f;
+  padding: 90px 20px 100px;
+  color: #e9f3ef;
+}
+
+.cep-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.cep-title {
+  text-align: center;
+  font-family: vinila, "Segoe UI", sans-serif;
+  font-weight: 900;
+  font-size: 1.15rem;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+
+/* LAYOUT */
+
+.cep-content {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 60px;
+}
+
+/* ESQUERDA */
+
+.cep-projects {
+  border: 1px dashed rgba(255,255,255,.35);
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin-bottom: 26px;
+}
+
+.cep-projects h3 {
+  margin: 0 0 12px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.cep-projects ol {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 0.7rem;
+  line-height: 1.6;
+}
+
+.cep-certificate {
+  position: relative;
+}
+
+.cep-cert-label {
+  position: absolute;
+  left: -6px;
+  top: 10px;
+  font-weight: 900;
+  font-size: 1.3rem;
+  color: #e3b43d;
+  line-height: 1;
+}
+
+.cep-certificate img {
+  width: 160px;
+  display: block;
+  margin-top: 10px;
+}
+
+/* DIREITA */
+
+.cep-right article {
+  margin-bottom: 20px;
+}
+
+.cep-right h4 {
+  margin: 0 0 6px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.cep-right p {
+  margin: 0;
+  font-size: 0.7rem;
+  line-height: 1.55;
+  color: #d7ebe4;
+}
+
+/* CTA */
+
+.cep-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.cep-cta button {
+  background: #e3b43d;
+  color: #1f1f1f;
+  border: none;
+  padding: 10px 26px;
+  font-size: 0.62rem;
+  font-weight: 800;
+  border-radius: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: transform .2s ease, background .2s ease;
+}
+
+.cep-cta button:hover {
+  background: #d4a62f;
+  transform: translateY(-1px);
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 980px) {
+  .cep-content {
+    grid-template-columns: 1fr;
+  }
+
+  .cep-certificate img {
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 520px) {
+  .cep {
+    padding: 70px 16px 90px;
+  }
+}
+/*acaba aqui*/
+
+/* ========================================================================== */
+/* COMPONENT: DEPOIMENTOS                                                      */
+/* ========================================================================== */
+
+.testimonials {
+  background: #ffffff;
+  padding: 90px 20px 100px;
+}
+
+.testimonials-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* SLIDER */
+
+.testimonials-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonials-track {
+  display: flex;
+  transition: transform 0.6s ease;
+}
+
+/* CARD */
+
+.testimonial {
+  min-width: 100%;
+  padding: 28px;
+  box-sizing: border-box;
+}
+
+.testimonial-avatar img {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 14px;
+}
+
+.testimonial-highlight {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #0f6b4f;
+  margin-bottom: 10px;
+}
+
+.testimonial-text {
+  font-size: 0.72rem;
+  line-height: 1.6;
+  color: #555;
+  max-width: 620px;
+  margin: 0 auto 16px;
+}
+
+.testimonial-author strong {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #222;
+}
+
+.testimonial-author span {
+  font-size: 0.65rem;
+  color: #777;
+}
+
+/* SETAS */
+
+.testimonials-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #2f2f2f;
+  color: #fff;
+  border: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.testimonials-nav.prev { left: -40px; }
+.testimonials-nav.next { right: -40px; }
+
+/* DOTS */
+
+.testimonials-dots {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 14px;
+}
+
+.testimonials-dots button {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: none;
+  background: #ccc;
+  cursor: pointer;
+}
+
+.testimonials-dots button.active {
+  background: #0f6b4f;
+}
+
+/* CTA */
+
+.testimonials-cta {
+  margin-top: 26px;
+}
+
+.testimonials-cta-btn {
+  background: #0f6b4f;
+  color: #fff;
+  border: none;
+  padding: 10px 26px;
+  font-size: 0.62rem;
+  font-weight: 800;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 700px) {
+  .testimonials-nav {
+    display: none;
+  }
+}
+/*acaba aqui*/
+
+/* ========================================================================== */
+/* COMPONENT: PREPARAÇÃO PARA A INDÚSTRIA (pi)                                 */
+/* ========================================================================== */
+
+.pi {
+  background: #ffffff;
+  padding: 100px 20px;
+}
+
+.pi-container {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* TEXTO */
+
+.pi-title {
+  font-family: vinila, "Segoe UI", sans-serif;
+  font-weight: 900;
+  font-size: 1.6rem;
+  line-height: 1.15;
+  color: #111;
+  margin: 0 0 18px;
+}
+
+.pi-description {
+  font-size: 0.72rem;
+  line-height: 1.6;
+  color: #666;
+  max-width: 420px;
+  margin-bottom: 26px;
+}
+
+.pi-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px;
+}
+
+.pi-list li {
+  margin-bottom: 16px;
+}
+
+.pi-list strong {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #0f6b4f;
+  margin-bottom: 4px;
+}
+
+.pi-list span {
+  font-size: 0.7rem;
+  line-height: 1.55;
+  color: #666;
+}
+
+/* CTA */
+
+.pi-cta {
+  background: #0f6b4f;
+  color: #fff;
+  border: none;
+  padding: 10px 26px;
+  font-size: 0.62rem;
+  font-weight: 800;
+  border-radius: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background .2s ease, transform .2s ease;
+}
+
+.pi-cta:hover {
+  background: #0c5a42;
+  transform: translateY(-1px);
+}
+
+/* IMAGEM */
+
+.pi-image {
+  display: flex;
+  justify-content: center;
+}
+
+.pi-image img {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 18px;
+  object-fit: cover;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 900px) {
+  .pi-container {
+    grid-template-columns: 1fr;
+  }
+
+  .pi-image {
+    order: -1;
+  }
+}
+
+@media (max-width: 520px) {
+  .pi {
+    padding: 80px 16px;
+  }
+
+  .pi-title {
+    font-size: 1.3rem;
+  }
+}
+/*acaba aqui*/
+
+/* ========================================================================== */
+/* COMPONENT: MÉTRICAS DO MERCADO (mm)                                         */
+/* ========================================================================== */
+
+.mm{
+  background:#0f6b4f;
+  padding: 70px 20px;
+}
+
+.mm-container{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.mm-grid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+  align-items: stretch;
+}
+
+.mm-card{
+  background:#fff;
+  border-radius: 14px;
+  padding: 22px 18px;
+  text-align:center;
+  box-shadow: 0 8px 26px rgba(0,0,0,.10);
+}
+
+.mm-card-value{
+  font-weight: 900;
+  font-size: 1.3rem;
+  color:#d2a62e;
+  margin-bottom: 10px;
+}
+
+.mm-card-title{
+  font-weight: 800;
+  font-size: .72rem;
+  color:#333;
+  margin-bottom: 8px;
+}
+
+.mm-card-text{
+  margin: 0 auto;
+  max-width: 260px;
+  font-size: .62rem;
+  line-height: 1.55;
+  color:#7a7a7a;
+}
+
+@media (max-width: 900px){
+  .mm-grid{ grid-template-columns: 1fr; }
+  .mm-card-text{ max-width: 520px; }
+}
+
+/* ========================================================================== */
+/* COMPONENT: ROTINA NO CURSO (rnc)                                            */
+/* ========================================================================== */
+
+.rnc{
+  background:#fff;
+  padding: 80px 20px;
+}
+
+.rnc-container{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.rnc-title{
+  text-align:center;
+  font-family: vinila, "Segoe UI", sans-serif;
+  font-weight: 900;
+  font-size: 1.05rem;
+  color:#111;
+  margin: 0 0 34px;
+}
+
+.rnc-steps{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  align-items:start;
+}
+
+.rnc-step{
+  text-align:left;
+}
+
+.rnc-badge{
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  background:#0f6b4f;
+  color:#fff;
+  font-size: .62rem;
+  font-weight: 900;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-bottom: 10px;
+}
+
+.rnc-step h3{
+  margin: 0 0 6px;
+  font-size: .70rem;
+  font-weight: 900;
+  color:#1f1f1f;
+}
+
+.rnc-step p{
+  margin: 0;
+  font-size: .62rem;
+  line-height: 1.45;
+  color:#7a7a7a;
+  max-width: 210px;
+}
+
+@media (max-width: 980px){
+  .rnc-steps{ grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 520px){
+  .rnc-steps{ grid-template-columns: 1fr; }
+  .rnc-step p{ max-width: 100%; }
+}
+
+/* ========================================================================== */
+/* COMPONENT: CURRÍCULO DEPOIS DO CURSO (cd)                                   */
+/* ========================================================================== */
+
+.cd{
+  background:#f2f2f0;
+  padding: 90px 20px;
+}
+
+.cd-container{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.cd-title{
+  font-family: vinila, "Segoe UI", sans-serif;
+  font-weight: 900;
+  font-size: 1.2rem;
+  line-height: 1.05;
+  color:#111;
+  margin: 0 0 22px;
+}
+
+.cd-card{
+  max-width: 640px;
+  margin: 0 auto;
+  background:#fff;
+  border-radius: 14px;
+  overflow:hidden;
+  box-shadow: 0 10px 28px rgba(0,0,0,.12);
+}
+
+.cd-head{
+  background:#0f6b4f;
+  color:#fff;
+  padding: 18px 20px;
+  display:flex;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.cd-name{ font-weight: 900; font-size: .72rem; margin-bottom: 2px; }
+.cd-role{ font-size: .62rem; opacity: .9; }
+
+.cd-salary{ font-weight: 900; font-size: .72rem; text-align:right; }
+.cd-salary-note{ font-size: .55rem; opacity:.85; text-align:right; }
+
+.cd-body{
+  padding: 16px 18px 20px;
+}
+
+.cd-subtitle{
+  margin: 8px 0 10px;
+  font-size: .62rem;
+  font-weight: 900;
+  color:#333;
+}
+
+.cd-list{
+  list-style:none;
+  padding:0;
+  margin: 0 0 14px;
+  display:flex;
+  flex-direction:column;
+  gap: 10px;
+}
+
+.cd-list li{
+  display:grid;
+  grid-template-columns: 14px 1fr;
+  gap: 10px;
+  align-items:start;
+}
+
+.cd-list li::before{
+  content:"✓";
+  color:#0f6b4f;
+  font-weight: 900;
+  font-size: .78rem;
+  line-height: 1;
+  margin-top: 2px;
+}
+
+.cd-list strong{
+  display:block;
+  font-size: .62rem;
+  font-weight: 900;
+  color:#2a2a2a;
+  margin-bottom: 2px;
+}
+
+.cd-list span{
+  display:block;
+  font-size: .58rem;
+  line-height: 1.45;
+  color:#7a7a7a;
+}
+
+.cd-tools img{
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  object-fit: cover;
+  display:block;
+  margin-bottom: 12px;
+}
+
+.cd-certificate img{
+  width: 190px;
+  display:block;
+}
+
+@media (max-width: 700px){
+  .cd-card{ max-width: 100%; }
+  .cd-head{ flex-direction:column; align-items:flex-start; }
+  .cd-salary, .cd-salary-note{ text-align:left; }
+}
+
+/* ========================================================================== */
+/* COMPONENT: INVESTIMENTO (inv)                                               */
+/* ========================================================================== */
+
+.inv{
+  background:#0f6b4f;
+  padding: 85px 20px 95px;
+  color:#fff;
+}
+
+.inv-container{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.inv-title{
+  font-family: vinila, "Segoe UI", sans-serif;
+  font-weight: 900;
+  font-size: 1.05rem;
+  margin: 0 0 22px;
+}
+
+.inv-grid{
+  display:grid;
+  grid-template-columns: 180px 180px 1fr 1fr;
+  gap: 26px;
+  align-items:start;
+}
+
+.inv-price .inv-line{
+  display:flex;
+  gap: 8px;
+  align-items: baseline;
+}
+
+.inv-price span{
+  font-size: .62rem;
+  opacity:.9;
+}
+
+.inv-price strong{
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.inv-sub{
+  font-size: .58rem;
+  opacity:.85;
+  margin-top: 4px;
+}
+
+.inv-info h3{
+  margin: 0 0 10px;
+  font-size: .68rem;
+  font-weight: 900;
+}
+
+.inv-info p{
+  margin: 0 0 6px;
+  font-size: .62rem;
+  opacity:.9;
+}
+
+.inv-list{
+  list-style:none;
+  padding:0;
+  margin: 0;
+  display:flex;
+  flex-direction:column;
+  gap: 10px;
+  font-size: .62rem;
+  opacity:.95;
+}
+
+.inv-list li{
+  display:flex;
+  align-items:flex-start;
+  gap: 10px;
+}
+
+.inv-dot{
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background:#e3b43d;
+  margin-top: 5px;
+  flex: 0 0 auto;
+}
+
+.inv-cta{
+  display:flex;
+  justify-content:center;
+  margin-top: 26px;
+}
+
+.inv-btn{
+  background:#e3b43d;
+  color:#1f1f1f;
+  border:0;
+  padding: 10px 26px;
+  font-size: .62rem;
+  font-weight: 900;
+  border-radius: 6px;
+  cursor:pointer;
+  text-transform: uppercase;
+  transition: transform .2s ease, background .2s ease;
+}
+
+.inv-btn:hover{
+  background:#d4a62f;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 980px){
+  .inv-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 520px){
+  .inv-grid{
+    grid-template-columns: 1fr;
+  }
+}
+/*acaba aqui*/
+
+/* ========================================================================== */
+/* COMPONENT: FAQ DO CURSO                                                     */
+/* ========================================================================== */
+
+.faq{
+  background:#ffffff;
+  padding: 90px 20px 100px;
+}
+
+.faq-container{
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-title{
+  text-align:center;
+  font-family: vinila, "Segoe UI", sans-serif;
+  font-weight: 900;
+  font-size: 1.1rem;
+  color:#111;
+  margin: 0 0 36px;
+}
+
+/* LISTA */
+
+.faq-list{
+  display:flex;
+  flex-direction:column;
+}
+
+.faq-item{
+  border-bottom: 1px solid #efefef;
+}
+
+.faq-question{
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  gap: 20px;
+  padding: 16px 0;
+  cursor:pointer;
+}
+
+.faq-question span{
+  font-size: .7rem;
+  font-weight: 700;
+  color:#333;
+  line-height: 1.4;
+}
+
+.faq-toggle{
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color:#d2a62e;
+  cursor:pointer;
+  line-height: 1;
+}
+
+/* RESPOSTA */
+
+.faq-answer{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .35s ease;
+}
+
+.faq-answer p{
+  margin: 0;
+  padding: 0 0 16px;
+  font-size: .65rem;
+  line-height: 1.55;
+  color:#777;
+}
+
+.faq-item.active .faq-answer{
+  max-height: 240px;
+}
+
+/* CTA */
+
+.faq-cta{
+  display:flex;
+  justify-content:center;
+  margin-top: 36px;
+}
+
+.faq-cta-btn{
+  background:#0f6b4f;
+  color:#fff;
+  border:none;
+  padding: 10px 28px;
+  font-size: .62rem;
+  font-weight: 800;
+  border-radius: 6px;
+  cursor:pointer;
+  text-transform: uppercase;
+  transition: background .2s ease, transform .2s ease;
+}
+
+.faq-cta-btn:hover{
+  background:#0c5a42;
+  transform: translateY(-1px);
+}
