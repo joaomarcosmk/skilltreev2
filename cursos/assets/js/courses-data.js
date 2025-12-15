@@ -26,7 +26,43 @@ const COURSES_DATA = {
   "../assets/images/galeria/3.jpg",
   "../assets/images/galeria/4.jpg",
   "../assets/images/galeria/5.jpg"
+],
+
+  modules: [
+  {
+    title: "Introdução ao Desenho Tridimensional",
+    description: "Domine a arte de criar figuras e formas tridimensionais com fundamentação teórica e estratégias intuitivas, estabelecendo a perspectiva correta como base para qualquer criação artística."
+  },
+  {
+    title: "Desenho Avançado e Perspectiva",
+    description: "Aprofundamento em estruturas complexas, múltiplos pontos de fuga e composição espacial."
+  },
+  {
+    title: "Fundamentos do Design",
+    description: "Princípios essenciais de design aplicados à arte digital."
+  },
+  {
+    title: "Design e Estilo Pessoal",
+    description: "Desenvolvimento de identidade visual e linguagem artística própria."
+  },
+  {
+    title: "Luz e Sombra Básicas",
+    description: "Compreensão dos fundamentos de iluminação e volume."
+  },
+  {
+    title: "Luz e Sombra Avançadas",
+    description: "Técnicas avançadas de iluminação dramática e realista."
+  },
+  {
+    title: "Teoria das Cores",
+    description: "Harmonia, contraste e psicologia das cores."
+  },
+  {
+    title: "Aplicação Avançada das Cores",
+    description: "Uso estratégico da cor em projetos complexos."
+  }
 ]
+
 
   }
 

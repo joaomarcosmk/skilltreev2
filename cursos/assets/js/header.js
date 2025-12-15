@@ -7,7 +7,7 @@
     // Gera o caminho correto: "../", "../../", "../../../", etc.
     const prefix = depth === 0 ? "" : "../".repeat(depth);
 
-    const headerPath = prefix + "components/header.txt";
+    const headerPath = prefix + "../components/header.txt"; 
 
     fetch(headerPath)
         .then(response => response.text())

@@ -4,5 +4,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   initHeader();
   initCourseHero();
   initCourseGallery();
+  initCourseModules();
 
 });
