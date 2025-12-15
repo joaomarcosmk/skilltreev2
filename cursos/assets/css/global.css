@@ -1,0 +1,606 @@
+/* ========================================================================== */
+/* COURSE HERO – BASE                                                          */
+/* ========================================================================== */
+
+.course-hero {
+    background: #ededed;
+    width: 100%;
+    padding: 120px 40px 100px;
+}
+
+.course-hero-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 80px;
+    align-items: center;
+}
+
+/* ========================================================================== */
+/* COLUNA ESQUERDA – INFORMAÇÕES DO CURSO                                      */
+/* ========================================================================== */
+
+.course-hero-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.course-hero-label {
+    font-family: vinila, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.course-hero-title {
+    font-family: vinila, sans-serif;
+    font-size: clamp(3rem, 4.5vw, 4.5rem);
+    font-weight: 900;
+    line-height: 1.05;
+    color: #111;
+    margin-bottom: 24px;
+}
+
+.course-hero-description {
+    font-family: Inter, sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #555;
+    max-width: 520px;
+    margin-bottom: 32px;
+}
+
+/* ========================================================================== */
+/* PREÇO                                                                       */
+/* ========================================================================== */
+
+.course-hero-price {
+    margin-bottom: 28px;
+}
+
+.course-hero-price-info {
+    font-family: Inter, sans-serif;
+    font-size: 0.9rem;
+    color: #777;
+    display: block;
+}
+
+.course-hero-price-value {
+    font-family: vinila, sans-serif;
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: #004835;
+}
+
+/* ========================================================================== */
+/* BENEFÍCIOS                                                                  */
+/* ========================================================================== */
+
+.course-hero-benefits {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.course-hero-benefit {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: Inter, sans-serif;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.course-hero-benefit strong {
+    color: #c40000;
+    font-weight: 600;
+}
+
+/* ÍCONES (placeholders) */
+.benefit-icon {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.benefit-live {
+    background: #d40000;
+}
+
+.benefit-mentor {
+    background: #f2b705;
+}
+
+.benefit-ps {
+    background: #1e73be;
+}
+
+/* ========================================================================== */
+/* BRAND                                                                       */
+/* ========================================================================== */
+
+.course-hero-brand {
+    margin-top: auto;
+}
+
+.course-hero-logo {
+    font-family: vinila, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #111;
+}
+
+/* ========================================================================== */
+/* COLUNA DIREITA – INSCRIÇÃO                                                  */
+/* ========================================================================== */
+
+.course-hero-enroll {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+/* IMAGEM DO CURSO */
+.course-hero-image {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    background: #ccc;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+/* ========================================================================== */
+/* FORMULÁRIO                                                                  */
+/* ========================================================================== */
+
+.course-hero-form {
+    background: #fff;
+    border-radius: 20px;
+    padding: 28px 28px 32px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+}
+
+.course-hero-form-title {
+    font-family: vinila, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 14px;
+}
+
+.course-hero-form-info p {
+    font-family: Inter, sans-serif;
+    font-size: 0.85rem;
+    color: #666;
+    margin: 4px 0;
+}
+
+/* ========================================================================== */
+/* INPUTS                                                                      */
+/* ========================================================================== */
+
+.course-hero-form-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.course-hero-form-fields input {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-family: Inter, sans-serif;
+    font-size: 0.9rem;
+}
+
+.course-hero-form-fields input:focus {
+    outline: none;
+    border-color: #004835;
+}
+
+/* ========================================================================== */
+/* BOTÃO CTA                                                                  */
+/* ========================================================================== */
+
+.course-hero-cta {
+    margin-top: 10px;
+    padding: 16px;
+    border-radius: 12px;
+    border: none;
+    background: #004835;
+    color: #fff;
+    font-family: vinila, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.course-hero-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 72, 53, 0.35);
+}
+
+/* ========================================================================== */
+/* RESPONSIVO                                                                  */
+/* ========================================================================== */
+
+@media (max-width: 1024px) {
+    .course-hero-container {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .course-hero {
+        padding: 100px 24px 80px;
+    }
+
+    .course-hero-info {
+        text-align: left;
+    }
+}
+
+@media (max-width: 600px) {
+    .course-hero-title {
+        font-size: 2.4rem;
+    }
+
+    .course-hero-description {
+        font-size: 0.95rem;
+    }
+
+    .course-hero-form {
+        padding: 24px;
+    }
+}
+
+
+/**/
+/*menu de navegação*/
+.header {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    width: calc(100% - 40px);
+    transform: translateX(-50%);
+    z-index: 9999;
+}
+
+.navbar {
+    background: #ffffff;
+    padding: 18px 40px;
+    border-radius: 40px;
+    box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.15);
+    max-width: 1400px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LOGO */
+.navbar__logo img {
+    height: 45px;
+}
+
+/* MENU */
+.navbar__menu {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar__menu a {
+    text-decoration: none;
+    color: #666;
+    font-size: 18px;
+    font-weight: 700;
+    transition: color .2s;
+    font-family: vinila, sans-serif;
+}
+
+.navbar__menu a:hover {
+    color: #222;
+}
+
+/* DROPDOWN */
+.dropdown {
+    position: relative;
+}
+
+.arrow {
+    font-size: 12px;
+    opacity: .6;
+}
+
+.dropdown-menu {
+    list-style: none;
+    position: absolute;
+    top: 45px; /* distância mais confortável e sem gaps */
+    left: 0;
+
+    min-width: 240px;
+    padding: 10px 0;
+    margin: 0;
+
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+
+    /* TRANSIÇÃO PROFISSIONAL */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity .25s ease, transform .25s ease, visibility .25s ease;
+
+    z-index: 100; /* aumenta segurança */
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 12px 20px;
+    color: #444;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+.dropdown-menu li a:hover {
+    background: #f5f5f5;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* SOCIAL */
+.navbar__social {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.navbar__social .icon {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    opacity: .45;
+    transition: opacity .2s, transform .2s;
+}
+
+.navbar__social .icon:hover {
+    opacity: 1;
+    transform: translateY(-1px);
+}
+/**/
+
+/**/
+/*footer*/
+footer {
+    background: #111;
+    padding: 70px 20px;
+
+    text-align: center;
+    color: #ccc;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* SOCIAL */
+
+.footer-social {
+    margin-bottom: 25px;
+
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.footer-social img {
+    width: 26px;
+    height: 26px;
+    opacity: .85;
+    transition: .2s ease;
+}
+
+.footer-social img:hover {
+    opacity: 1;
+}
+
+/* TEXT */
+
+.footer-text {
+    margin-bottom: 20px;
+
+    font-size: .95rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.footer-text a {
+    color: #ccc;
+    text-decoration: underline;
+    transition: .2s ease;
+}
+
+.footer-text a:hover {
+    color: #fff;
+}
+
+/* LINKS */
+
+.footer-links {
+    margin-bottom: 25px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-links a {
+    font-size: .9rem;
+    font-weight: 500;
+    color: #ccc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+    text-decoration: underline;
+    transition: .2s ease;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+/* COPYRIGHT */
+
+.footer-copy {
+    font-size: .85rem;
+    color: #888;
+}
+
+/**/
+
+/*Galeria*/
+/* ========================================================================== */
+/* COURSE GALLERY                                                             */
+/* ========================================================================== */
+
+.course-gallery {
+  padding: 120px 40px;
+  background: #fff;
+}
+
+.course-gallery-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.course-gallery-title {
+  font-family: vinila, sans-serif;
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.course-gallery-subtitle {
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  color: #666;
+}
+
+/* GRID */
+
+.course-gallery-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 160px;
+  gap: 16px;
+}
+
+.course-gallery-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.course-gallery-grid img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 30px rgba(0,0,0,.25);
+}
+
+/* CTA */
+
+.course-gallery-cta {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.gallery-cta-btn {
+  background: #004835;
+  color: #fff;
+  border: none;
+  padding: 16px 34px;
+  border-radius: 12px;
+  font-family: vinila, sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* ========================================================================== */
+/* LIGHTBOX                                                                   */
+/* ========================================================================== */
+
+.gallery-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+}
+
+.gallery-lightbox[hidden] {
+  display: none;
+}
+
+.lightbox-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.85);
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox-image {
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform .2s ease;
+}
+
+.lightbox-controls {
+  position: absolute;
+  bottom: -60px;
+  display: flex;
+  gap: 12px;
+}
+
+.lightbox-controls button {
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/*Galeria*/

@@ -1,0 +1,107 @@
+<section class="course-hero">
+
+  <div class="course-hero-container">
+
+    <!-- COLUNA ESQUERDA -->
+    <div class="course-hero-info">
+
+      <span class="course-hero-label" data-course-label>
+        Curso Online de
+      </span>
+
+      <h1 class="course-hero-title" data-course-title>
+        FUNDAMENTOS DA<br>ARTE
+      </h1>
+
+      <p class="course-hero-description" data-course-description>
+        Conheça os fundamentos indispensáveis da arte digital, equilibrando teoria e prática criativa, construindo pilares sólidos para sua expressão visual.
+      </p>
+
+      <div class="course-hero-price">
+        <span class="course-hero-price-info" data-course-price-info>
+          Parcele no boleto em até 9x de
+        </span>
+        <strong class="course-hero-price-value" data-course-price>
+          R$ 800
+        </strong>
+      </div>
+
+      <ul class="course-hero-benefits">
+        <li class="course-hero-benefit">
+          <span class="benefit-icon benefit-live"></span>
+          <span data-course-benefit> Aulas semanais <strong>Ao Vivo</strong></span>
+        </li>
+        <li class="course-hero-benefit">
+          <span class="benefit-icon benefit-mentor"></span>
+          <span data-course-benefit> Monitorias semanais com tira dúvidas</span>
+        </li>
+        <li class="course-hero-benefit">
+          <span class="benefit-icon benefit-ps"></span>
+          <span data-course-benefit> Formação completa avançada</span>
+        </li>
+      </ul>
+
+      <div class="course-hero-brand">
+        <span class="course-hero-logo">Skilltree</span>
+      </div>
+
+    </div>
+
+    <!-- COLUNA DIREITA -->
+    <div class="course-hero-enroll">
+
+      <div class="course-hero-image">
+        <!-- imagem aplicada via CSS ou JS -->
+      </div>
+
+      <div class="course-hero-form">
+
+        <h3 class="course-hero-form-title">
+          Inscreva-se
+        </h3>
+
+        <div class="course-hero-form-info">
+          <p data-course-start>
+            Início da formação: 19 de Fevereiro
+          </p>
+          <p data-course-schedule>
+            Aulas às quintas-feiras das 19:00 às 21:30.
+          </p>
+          <p data-course-mentoring>
+            Monitorias às segundas-feiras das 19:00 às 21:00.
+          </p>
+        </div>
+
+        <form class="course-hero-form-fields">
+
+          <input 
+            type="text" 
+            name="name" 
+            placeholder="Digite seu nome completo" 
+            data-course-input-name
+          >
+
+          <input 
+            type="email" 
+            name="email" 
+            placeholder="Digite seu e-mail" 
+            data-course-input-email
+          >
+
+          <button 
+            type="submit" 
+            class="course-hero-cta"
+            data-course-cta
+          >
+            QUERO ME INSCREVER
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
