@@ -74,29 +74,44 @@
 
         <form class="course-hero-form-fields">
 
-          <input 
-            type="text" 
-            name="name" 
-            placeholder="Digite seu nome completo" 
-            data-course-input-name
-          >
+  <input 
+    type="text" 
+    name="name" 
+    placeholder="Digite seu nome completo" 
+    data-course-input-name
+  >
 
-          <input 
-            type="email" 
-            name="email" 
-            placeholder="Digite seu e-mail" 
-            data-course-input-email
-          >
+  <input 
+    type="email" 
+    name="email" 
+    placeholder="Digite seu e-mail" 
+    data-course-input-email
+  >
 
-          <button 
-            type="submit" 
-            class="course-hero-cta"
-            data-course-cta
-          >
-            QUERO ME INSCREVER
-          </button>
+  <input 
+    type="tel" 
+    name="whatsapp" 
+    placeholder="Digite seu WhatsApp" 
+    data-course-input-whatsapp
+  >
 
-        </form>
+  <input 
+    type="url" 
+    name="portfolio" 
+    placeholder="Insira o link dos seus desenhos" 
+    data-course-input-portfolio
+  >
+
+  <button 
+    type="submit" 
+    class="course-hero-cta"
+    data-course-cta
+  >
+    QUERO ME INSCREVER
+  </button>
+
+</form>
+
 
       </div>
 

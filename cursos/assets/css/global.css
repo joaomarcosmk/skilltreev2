@@ -6,7 +6,16 @@
     background: #ededed;
     width: 100%;
     padding: 120px 40px 100px;
+    background-image: url('../../../assets/images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0 0 85px 85px;
+    overflow: hidden;
 }
+
+
+
 
 .course-hero-container {
     max-width: 1400px;
@@ -154,17 +163,21 @@
     background: #ccc;
     border-radius: 16px;
     overflow: hidden;
+    background-image: url('../../../assets/images/fundamentos-arte-curso-768x415.webp');
+    
 }
 
-/* ========================================================================== */
-/* FORMULÁRIO                                                                  */
-/* ========================================================================== */
-
 .course-hero-form {
-    background: #fff;
+    /* define fundo semi-transparente e limites do card */
+    background: transparent;
     border-radius: 20px;
-    padding: 28px 28px 32px;
+    padding: 32px 28px;
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+    display: block;
+    max-width: 650px; /* limite horizontal semelhante ao layout de referência */
+    width: 100%;
+    margin: 0 auto;   /* centraliza dentro do herói se houver espaço */
+    box-sizing: border-box;
 }
 
 .course-hero-form-title {
@@ -182,29 +195,44 @@
     margin: 4px 0;
 }
 
-/* ========================================================================== */
-/* INPUTS                                                                      */
-/* ========================================================================== */
-
 .course-hero-form-fields {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin-top: 18px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16px; /* espaçamento horizontal entre campos */
+    row-gap: 16px;    /* espaçamento vertical entre linhas */
+    margin-top: 24px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .course-hero-form-fields input {
     width: 100%;
     padding: 14px 16px;
-    border-radius: 10px;
-    border: 1px solid #ddd;
-    font-family: Inter, sans-serif;
     font-size: 0.9rem;
+    font-family: Inter, sans-serif;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.2s ease;
+    box-sizing: border-box; /* impede que a borda/acolchoamento extrapole o grid */
 }
 
 .course-hero-form-fields input:focus {
-    outline: none;
-    border-color: #004835;
+    border-color: red;
+}
+
+/* Botão ocupa toda a largura do grid */
+.course-hero-form-fields .course-hero-cta {
+    grid-column: 1 / -1;
+    margin-top: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .course-hero-form-fields {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* ========================================================================== */
@@ -223,46 +251,15 @@
     font-weight: 700;
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 .course-hero-cta:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(0, 72, 53, 0.35);
 }
-
-/* ========================================================================== */
-/* RESPONSIVO                                                                  */
-/* ========================================================================== */
-
-@media (max-width: 1024px) {
-    .course-hero-container {
-        grid-template-columns: 1fr;
-        gap: 60px;
-    }
-
-    .course-hero {
-        padding: 100px 24px 80px;
-    }
-
-    .course-hero-info {
-        text-align: left;
-    }
-}
-
-@media (max-width: 600px) {
-    .course-hero-title {
-        font-size: 2.4rem;
-    }
-
-    .course-hero-description {
-        font-size: 0.95rem;
-    }
-
-    .course-hero-form {
-        padding: 24px;
-    }
-}
-
 
 /**/
 /*menu de navegação*/

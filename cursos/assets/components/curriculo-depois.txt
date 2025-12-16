@@ -1,0 +1,43 @@
+<section class="cd" data-cd>
+  <div class="cd-container">
+
+    <h2 class="cd-title">SEU CURRÍCULO<br>DEPOIS DO CURSO</h2>
+
+    <article class="cd-card">
+      <header class="cd-head">
+        <div class="cd-head-left">
+          <div class="cd-name">Seu nome</div>
+          <div class="cd-role">Ilustrador(a) | Concept Artist</div>
+        </div>
+
+        <div class="cd-head-right">
+          <div class="cd-salary">5.000/mês*</div>
+          <div class="cd-salary-note">*Re Glassdoor.com para a grande São Paulo</div>
+        </div>
+      </header>
+
+      <div class="cd-body">
+        <h3 class="cd-subtitle">Habilidades</h3>
+
+        <ul class="cd-list">
+          <li><strong>Domínio avançado de objetos</strong><span>Capacidade de criar representações detalhadas e precisas de objetos.</span></li>
+          <li><strong>Domínio avançado de luz e forma</strong><span>Habilidade de usar luz e sombra para dar vida e tridimensionalidade às ilustrações.</span></li>
+          <li><strong>Domínio avançado de perspectiva</strong><span>Compreensão de como criar profundidade e dimensão em composições artísticas.</span></li>
+          <li><strong>Domínio avançado de fundamentos de Design</strong><span>Domínio dos elementos fundamentais do design gráfico e aplicação em projetos.</span></li>
+          <li><strong>Domínio avançado de teoria e aplicação das cores</strong><span>Expertise em selecionar e aplicar cores para transmitir o tom certo e enriquecer o trabalho visual.</span></li>
+          <li><strong>Domínio avançado de desenho tridimensional</strong><span>Proficiência em técnicas de desenho que conferem realismo e dinamismo às ilustrações.</span></li>
+        </ul>
+
+        <h3 class="cd-subtitle">Ferramentas de domínio</h3>
+        <div class="cd-tools">
+          <img src="#" alt="Photoshop">
+        </div>
+
+        <div class="cd-certificate">
+          <img src="#" alt="Certificado do curso">
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
