@@ -1,0 +1,45 @@
+<section class="inv" data-inv>
+  <div class="inv-container">
+
+    <h2 class="inv-title">INVESTIMENTO</h2>
+
+    <div class="inv-grid">
+
+      <div class="inv-price">
+        <div class="inv-line">
+          <span>8x de</span>
+          <strong>R$ 800</strong>
+        </div>
+        <div class="inv-sub">sem juros no boleto</div>
+      </div>
+
+      <div class="inv-price">
+        <div class="inv-line">
+          <span>ou</span>
+          <strong>R$ 6600</strong>
+        </div>
+        <div class="inv-sub">à vista</div>
+      </div>
+
+      <div class="inv-info">
+        <h3>Inscreva-se</h3>
+        <p>Início da formação: 19 de Fevereiro</p>
+        <p>Aulas às quinta-feiras das 18:00 às 21:30.</p>
+        <p>Monitorias às segundas-feiras das 18:00 às 21:00.</p>
+      </div>
+
+      <ul class="inv-list">
+        <li><span class="inv-dot"></span> Aulas semanais <strong>Ao Vivo</strong></li>
+        <li><span class="inv-dot"></span> Monitorias semanais com tira dúvidas</li>
+        <li><span class="inv-dot"></span> Formação completa avançada</li>
+        <li><span class="inv-dot"></span> Tarefas práticas com Feedback</li>
+      </ul>
+
+    </div>
+
+    <div class="inv-cta">
+      <button class="inv-btn" data-inv-cta>QUERO ME INSCREVER</button>
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,86 @@
+<section class="cep" data-cep>
+  <div class="cep-container">
+
+    <h2 class="cep-title">
+      CONHECIMENTOS E HABILIDADES QUE VOCÊ ADQUIRIRÁ
+    </h2>
+
+    <div class="cep-content">
+
+      <!-- BLOCO ESQUERDO -->
+      <div class="cep-left">
+
+        <div class="cep-projects">
+          <h3>7 Projetos para o seu Portfólio</h3>
+          <ol>
+            <li>Ilustrações com técnicas variadas</li>
+            <li>Diversos projetos de luz e sombras</li>
+            <li>Diversos projetos de aplicação de cores</li>
+            <li>Projetos de observação geral</li>
+            <li>Projeto da contenda</li>
+            <li>Diversos projetos de perspectiva</li>
+            <li>Projeto final</li>
+          </ol>
+        </div>
+
+        <div class="cep-certificate">
+          <span class="cep-cert-label">CERTIFICADO</span>
+          <img src="#" alt="Certificado do curso">
+        </div>
+
+      </div>
+
+      <!-- BLOCO DIREITO -->
+      <div class="cep-right">
+
+        <article>
+          <h4>1. Domínio das Técnicas de Desenho e Perspectiva</h4>
+          <p>
+            Domine a arte de dar vida a figuras e formas tridimensionais com
+            precisão e criatividade, aplicando fundamentos sólidos para qualquer
+            área da arte digital.
+          </p>
+        </article>
+
+        <article>
+          <h4>2. Exploração Criativa do Design</h4>
+          <p>
+            Desenvolva sua criatividade por meio dos princípios do design,
+            criando narrativas visuais e estabelecendo um estilo autoral.
+          </p>
+        </article>
+
+        <article>
+          <h4>3. Entendimento Profundo de Luz e Forma</h4>
+          <p>
+            Aprenda a utilizar luz e sombra para criar profundidade,
+            tridimensionalidade e realismo em suas criações.
+          </p>
+        </article>
+
+        <article>
+          <h4>4. Domínio da Cor em Arte e Design</h4>
+          <p>
+            Compreenda a teoria das cores e aplique paletas com intenção,
+            transmitindo emoção e impacto visual.
+          </p>
+        </article>
+
+        <article>
+          <h4>5. Desenvolvimento de Projetos Autorais</h4>
+          <p>
+            Consolide todo o aprendizado criando um projeto autoral completo,
+            refletindo sua identidade artística.
+          </p>
+        </article>
+
+      </div>
+
+    </div>
+
+    <div class="cep-cta">
+      <button data-cep-cta>QUERO ME INSCREVER</button>
+    </div>
+
+  </div>
+</section>

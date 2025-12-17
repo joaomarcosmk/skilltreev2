@@ -1,0 +1,38 @@
+<footer class="footer">
+        <div class="footer-container">
+
+            <!-- Social -->
+            <div class="footer-social">
+                <a href="#" aria-label="Instagram">
+                    <img src="assets/images/instaicon.png" alt="Instagram">
+                </a>
+                <a href="#" aria-label="YouTube">
+                    <img src="assets/images/yticon.png" alt="YouTube">
+                </a>
+                <a href="#" aria-label="Spotify">
+                    <img src="assets/images/sptyicon.png" alt="Spotify">
+                </a>
+                <a href="#" aria-label="LinkedIn">
+                    <img src="assets/images/linkedinicon.png" alt="LinkedIn">
+                </a>
+            </div>
+
+            <!-- Contact -->
+            <p class="footer-text">
+                Obrigado pela visita! Caso tenha alguma dúvida, entre em contato através do e-mail:<br>
+                <a href="mailto:atendimento@skilltree.com.br">atendimento@skilltree.com.br</a>
+            </p>
+
+            <!-- Useful Links -->
+            <div class="footer-links">
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Trabalhe Conosco</a>
+            </div>
+
+            <!-- Copy -->
+            <div class="footer-copy">
+                © Skilltree | Brasil | 2025
+            </div>
+
+        </div>
+    </footer>

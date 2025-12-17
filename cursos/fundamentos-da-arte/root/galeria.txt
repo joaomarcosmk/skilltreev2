@@ -1,0 +1,40 @@
+<section class="course-gallery">
+
+  <div class="course-gallery-header">
+    <h2 class="course-gallery-title" data-gallery-title>
+      SUAS PEÇAS PODEM SER ASSIM
+    </h2>
+    <p class="course-gallery-subtitle" data-gallery-subtitle>
+      Trabalhos dos alunos de Fundamentos da Arte
+    </p>
+  </div>
+
+  <div class="course-gallery-grid" data-gallery-grid>
+    <!-- imagens injetadas via JS -->
+  </div>
+
+  <div class="course-gallery-cta">
+    <button class="gallery-cta-btn">
+      QUERO FAZER ARTES ASSIM
+    </button>
+  </div>
+
+</section>
+
+<!-- LIGHTBOX -->
+<div class="gallery-lightbox" data-lightbox hidden>
+  <div class="lightbox-overlay"></div>
+
+  <div class="lightbox-content">
+    <img src="" alt="" class="lightbox-image">
+
+    <div class="lightbox-controls">
+      <button data-prev>‹</button>
+      <button data-next>›</button>
+      <button data-zoom-in>＋</button>
+      <button data-zoom-out>－</button>
+      <button data-share>⤴</button>
+      <button data-close>✕</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+<section class="rnc" data-rnc>
+  <div class="rnc-container">
+
+    <h2 class="rnc-title">COMO SERÁ A SUA ROTINA DENTRO DO CURSO DE CENÁRIOS</h2>
+
+    <div class="rnc-steps">
+
+      <article class="rnc-step">
+        <div class="rnc-badge">1</div>
+        <h3>Aprenda durante a aula Ao Vivo</h3>
+        <p>Tenha ensinado pelo professor.</p>
+      </article>
+
+      <article class="rnc-step">
+        <div class="rnc-badge">2</div>
+        <h3>Coloque o aprendizado em prática</h3>
+        <p>Faça as tarefas passadas durante a aula.</p>
+      </article>
+
+      <article class="rnc-step">
+        <div class="rnc-badge">3</div>
+        <h3>Participe da monitoria Ao Vivo</h3>
+        <p>Tire suas dúvidas com o monitor.</p>
+      </article>
+
+      <article class="rnc-step">
+        <div class="rnc-badge">4</div>
+        <h3>Marque uma monitoria individual</h3>
+        <p>Em caso de dúvidas, você pode marcar uma monitoria individual.</p>
+      </article>
+
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,52 @@
+<section class="pqi" data-pqi>
+  <div class="pqi-container">
+
+    <!-- TEXTO -->
+    <div class="pqi-text">
+      <h2 class="pqi-title">PARA QUEM É INDICADO</h2>
+
+      <ul class="pqi-list">
+        <li>
+          <strong>Iniciantes em Arte Digital</strong>
+          <span>Ideal para quem está começando e busca uma base sólida.</span>
+        </li>
+
+        <li>
+          <strong>Artistas Buscando Aprimoramento</strong>
+          <span>Perfeito para artistas que querem elevar sua arte a um novo nível.</span>
+        </li>
+
+        <li>
+          <strong>Profissionais da Indústria Criativa</strong>
+          <span>
+            Essencial para ilustradores e designers gráficos que desejam atualizar
+            suas habilidades.
+          </span>
+        </li>
+      </ul>
+
+      <button class="pqi-cta" data-pqi-cta>QUERO ME INSCREVER</button>
+    </div>
+
+    <!-- IMAGENS -->
+    <div class="pqi-images">
+      <div class="pqi-image pqi-image-large">
+        <img src="#" alt="Ilustração artística principal">
+      </div>
+
+      <div class="pqi-image pqi-image-small">
+        <img src="#" alt="Escultura estilizada">
+      </div>
+
+      <div class="pqi-image pqi-image-small">
+        <img src="#" alt="Personagem com espada">
+      </div>
+    </div>
+
+    <!-- DECOR -->
+    <aside class="pqi-mascot" aria-hidden="true">
+      <img src="#" alt="">
+    </aside>
+
+  </div>
+</section>
